@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "System interconnect and power")
-		(rev "1.0")
+		(rev "1.1")
 		(company "PSCONT  |  PWM backplane")
 		(comment 1 "12 V DC   /   LVDS point-to-point   /   card-side termination")
 	)
@@ -151,21 +151,21 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "[10]"
+	(text "CONVERTERS"
 		(exclude_from_sim no)
-		(at 381 148.59 0)
+		(at 29.21 130.81 0)
 		(effects
 			(font
 				(face "Arial")
-				(size 3.15 3.15)
+				(size 2.8 2.8)
 			)
 			(justify left)
 		)
-		(uuid "00c3db4b-77e5-50cc-8f73-756992fe2eee")
+		(uuid "0e56f58a-897d-5a94-abba-7e7ec2a53171")
 	)
-	(text "J12   /   U,V,W"
+	(text "J13   /   U,V,W"
 		(exclude_from_sim no)
-		(at 317.5 106.68 0)
+		(at 317.5 119.38 0)
 		(effects
 			(font
 				(face "Arial")
@@ -173,11 +173,11 @@
 			)
 			(justify left)
 		)
-		(uuid "05da7509-c115-5239-b29f-f05fb06dabb6")
+		(uuid "1c266b95-d8f3-5671-b3f2-43c837de878b")
 	)
 	(text "J22   /   D1"
 		(exclude_from_sim no)
-		(at 317.5 241.3 0)
+		(at 317.5 240.03 0)
 		(effects
 			(font
 				(face "Arial")
@@ -187,41 +187,41 @@
 		)
 		(uuid "2bc0e44e-4e07-5118-94b2-a4f77378b177")
 	)
-	(text "[8]"
+	(text "J17   /   D1"
 		(exclude_from_sim no)
-		(at 381 119.38 0)
+		(at 317.5 176.53 0)
 		(effects
 			(font
 				(face "Arial")
-				(size 3.15 3.15)
-			)
-			(justify left)
-		)
-		(uuid "2d9c8421-75c7-591c-a12d-cb14d726859c")
-	)
-	(text "[11]"
-		(exclude_from_sim no)
-		(at 381 161.29 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 3.15 3.15)
-			)
-			(justify left)
-		)
-		(uuid "2e605bbd-289b-5792-b32d-92916cd14966")
-	)
-	(text "[13]"
-		(exclude_from_sim no)
-		(at 381 186.69 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 3.15 3.15)
+				(size 3.7 3.7)
 			)
 			(justify left)
 		)
 		(uuid "36fb34e7-ad59-5fa8-9113-3c6fc49c5785")
+	)
+	(text "[16]"
+		(exclude_from_sim no)
+		(at 381 157.48 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.15 3.15)
+			)
+			(justify left)
+		)
+		(uuid "3a32bce2-60dd-5715-9e1c-d393e9a4aafc")
+	)
+	(text "[18]"
+		(exclude_from_sim no)
+		(at 381 189.23 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.15 3.15)
+			)
+			(justify left)
+		)
+		(uuid "452315d5-d7bc-555b-a43c-af6cc54b8a6c")
 	)
 	(text "J2   [3]"
 		(exclude_from_sim no)
@@ -233,35 +233,11 @@
 			)
 			(justify left)
 		)
-		(uuid "39e1b631-aeca-5af2-a3c9-554303c63db4")
+		(uuid "4583b7c7-2515-5bf9-b390-4a3b2e88120c")
 	)
-	(text "[7]"
+	(text "[21]"
 		(exclude_from_sim no)
-		(at 381 106.68 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 3.15 3.15)
-			)
-			(justify left)
-		)
-		(uuid "3d861785-bf6c-5445-84a5-32b8a0d6788b")
-	)
-	(text "96 contacts"
-		(exclude_from_sim no)
-		(at 29.21 224.79 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.85 2.85)
-			)
-			(justify left)
-		)
-		(uuid "452315d5-d7bc-555b-a43c-af6cc54b8a6c")
-	)
-	(text "[16]"
-		(exclude_from_sim no)
-		(at 381 228.6 0)
+		(at 381 227.33 0)
 		(effects
 			(font
 				(face "Arial")
@@ -271,29 +247,17 @@
 		)
 		(uuid "4aca319e-a062-5ae9-b9eb-022e6096a250")
 	)
-	(text "J15   /   U,V,W"
+	(text "CHOPPERS"
 		(exclude_from_sim no)
-		(at 317.5 148.59 0)
+		(at 29.21 213.36 0)
 		(effects
 			(font
 				(face "Arial")
-				(size 3.7 3.7)
+				(size 2.8 2.8)
 			)
 			(justify left)
 		)
-		(uuid "4dd6fef4-f9db-5b7f-9ed8-c79559ed6965")
-	)
-	(text "J3   [4]"
-		(exclude_from_sim no)
-		(at 29.21 158.75 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 3.15 3.15)
-			)
-			(justify left)
-		)
-		(uuid "5c517012-9581-5f3b-b796-f8aa650bec40")
+		(uuid "5085a0ac-860a-59d7-980c-7c8f06e18b9e")
 	)
 	(text "PWM backplane   |   system interconnect"
 		(exclude_from_sim no)
@@ -307,9 +271,21 @@
 		)
 		(uuid "5cca3c17-7ca2-5145-a0cb-e536760962e1")
 	)
-	(text "J4   [5]"
+	(text "J18   /   D2"
 		(exclude_from_sim no)
-		(at 29.21 213.36 0)
+		(at 317.5 189.23 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.7 3.7)
+			)
+			(justify left)
+		)
+		(uuid "5daee288-5885-54fc-87d9-c54c17ee2487")
+	)
+	(text "[15]"
+		(exclude_from_sim no)
+		(at 381 144.78 0)
 		(effects
 			(font
 				(face "Arial")
@@ -317,9 +293,9 @@
 			)
 			(justify left)
 		)
-		(uuid "5daee288-5885-54fc-87d9-c54c17ee2487")
+		(uuid "5eb93401-43f2-56b4-a3c8-9768f9391acb")
 	)
-	(text "12 V / 10 A input. Budget 7.25 A. F2 feeds J2. F11-F22 feed the PWM sockets."
+	(text "12 V / 10 A input. Budget 7.25 A. F2 feeds J2/J3. F11-F22 feed the PWM sockets."
 		(exclude_from_sim no)
 		(at 25.4 256.54 0)
 		(effects
@@ -333,7 +309,7 @@
 	)
 	(text "J19   /   D3"
 		(exclude_from_sim no)
-		(at 317.5 203.2 0)
+		(at 317.5 201.93 0)
 		(effects
 			(font
 				(face "Arial")
@@ -355,7 +331,7 @@
 		)
 		(uuid "69b910fe-7d86-5bf1-b32b-af980e2e53fe")
 	)
-	(text "Power distribution [3, 6-17]. Gate TX and fault RX are on the PWM cards."
+	(text "Power distribution [2, 3, 7, 11-22]. Gate TX and fault RX are on the PWM cards."
 		(exclude_from_sim no)
 		(at 146.05 66.04 0)
 		(effects
@@ -391,9 +367,21 @@
 		)
 		(uuid "7bc53b35-3343-5590-b8a0-58a9ab13f0f1")
 	)
-	(text "[12]"
+	(text "160 contacts"
 		(exclude_from_sim no)
-		(at 381 173.99 0)
+		(at 29.21 198.12 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.85 2.85)
+			)
+			(justify left)
+		)
+		(uuid "7e9113fe-7bc5-5e37-af71-d593ce7ecdb1")
+	)
+	(text "[14]"
+		(exclude_from_sim no)
+		(at 381 132.08 0)
 		(effects
 			(font
 				(face "Arial")
@@ -401,11 +389,23 @@
 			)
 			(justify left)
 		)
-		(uuid "7e9113fe-7bc5-5e37-af71-d593ce7ecdb1")
+		(uuid "80a4f4f1-0b61-5b84-ae6a-70bad81a59be")
 	)
-	(text "[15]"
+	(text "[17]"
 		(exclude_from_sim no)
-		(at 381 215.9 0)
+		(at 381 176.53 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.15 3.15)
+			)
+			(justify left)
+		)
+		(uuid "80ee6541-6152-56a1-879c-7d9e4f20e95e")
+	)
+	(text "[20]"
+		(exclude_from_sim no)
+		(at 381 214.63 0)
 		(effects
 			(font
 				(face "Arial")
@@ -417,7 +417,7 @@
 	)
 	(text "J20   /   D3"
 		(exclude_from_sim no)
-		(at 317.5 215.9 0)
+		(at 317.5 214.63 0)
 		(effects
 			(font
 				(face "Arial")
@@ -427,17 +427,29 @@
 		)
 		(uuid "84bc020a-7c5d-5ef5-82d3-1b86c927cbcd")
 	)
-	(text "[6]"
+	(text "J15   /   U,V,W"
 		(exclude_from_sim no)
-		(at 381 93.98 0)
+		(at 317.5 144.78 0)
 		(effects
 			(font
 				(face "Arial")
-				(size 3.15 3.15)
+				(size 3.7 3.7)
 			)
 			(justify left)
 		)
-		(uuid "8b1d6055-f6ca-5a16-9520-ce7b5e507932")
+		(uuid "84d55a5b-5e94-5014-9bb5-18c48cf6ab59")
+	)
+	(text "J11   /   U,V,W"
+		(exclude_from_sim no)
+		(at 317.5 93.98 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.7 3.7)
+			)
+			(justify left)
+		)
+		(uuid "881ff898-05ed-54a4-8f10-bc7c4e747732")
 	)
 	(text "C1-C6 share U/V/W. H1/H6 = D1, H2/H5 = D2, H3/H4 = D3."
 		(exclude_from_sim no)
@@ -499,9 +511,9 @@
 		)
 		(uuid "a4ef22ee-c73c-50c6-94f7-b83401f690d0")
 	)
-	(text "[17]"
+	(text "[22]"
 		(exclude_from_sim no)
-		(at 381 241.3 0)
+		(at 381 240.03 0)
 		(effects
 			(font
 				(face "Arial")
@@ -510,6 +522,18 @@
 			(justify left)
 		)
 		(uuid "a63e53fd-0ee8-5fef-81ae-c14358dc41f4")
+	)
+	(text "[12]"
+		(exclude_from_sim no)
+		(at 381 106.68 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.15 3.15)
+			)
+			(justify left)
+		)
+		(uuid "a6b21d5a-98a7-5905-ae56-62e31989ad9d")
 	)
 	(text "J14   /   U,V,W"
 		(exclude_from_sim no)
@@ -521,31 +545,19 @@
 			)
 			(justify left)
 		)
-		(uuid "a6bad536-8a36-5733-9c69-9114fe030c3e")
+		(uuid "b535f7b0-ab4a-5c1f-a7d2-639579432bab")
 	)
-	(text "96 contacts"
+	(text "J16   /   U,V,W"
 		(exclude_from_sim no)
-		(at 29.21 115.57 0)
+		(at 317.5 157.48 0)
 		(effects
 			(font
 				(face "Arial")
-				(size 2.85 2.85)
+				(size 3.7 3.7)
 			)
 			(justify left)
 		)
-		(uuid "aca2c6e4-2fec-5bfa-9942-04b08a50e06d")
-	)
-	(text "96 contacts"
-		(exclude_from_sim no)
-		(at 29.21 170.18 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.85 2.85)
-			)
-			(justify left)
-		)
-		(uuid "af93ecbd-5782-53ad-b05c-a41061d4f43b")
+		(uuid "b6230d52-a898-5165-b374-bf50d879f354")
 	)
 	(text "J1   DC input"
 		(exclude_from_sim no)
@@ -559,9 +571,21 @@
 		)
 		(uuid "bd6faabf-d219-5303-b006-6e641b318adb")
 	)
+	(text "[13]"
+		(exclude_from_sim no)
+		(at 381 119.38 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.15 3.15)
+			)
+			(justify left)
+		)
+		(uuid "c60e7bc9-6f9b-5dbb-aa40-ddc1502da83a")
+	)
 	(text "J21   /   D2"
 		(exclude_from_sim no)
-		(at 317.5 228.6 0)
+		(at 317.5 227.33 0)
 		(effects
 			(font
 				(face "Arial")
@@ -583,55 +607,43 @@
 		)
 		(uuid "d215e95c-7c3a-50b6-8a38-1729e0a69c1b")
 	)
-	(text "J13   /   U,V,W"
+	(text "J3   [7]"
 		(exclude_from_sim no)
-		(at 317.5 119.38 0)
+		(at 29.21 186.69 0)
 		(effects
 			(font
 				(face "Arial")
-				(size 3.7 3.7)
-			)
-			(justify left)
-		)
-		(uuid "d433e98b-34dc-5e1b-a714-1af593a84786")
-	)
-	(text "J18   /   D2"
-		(exclude_from_sim no)
-		(at 317.5 186.69 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 3.7 3.7)
-			)
-			(justify left)
-		)
-		(uuid "d73b4731-0117-5de5-9fb9-d7d2727a8811")
-	)
-	(text "J16   /   U,V,W"
-		(exclude_from_sim no)
-		(at 317.5 161.29 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 3.7 3.7)
-			)
-			(justify left)
-		)
-		(uuid "dfb4e2c5-234b-5aec-859c-aff90d34b3a7")
-	)
-	(text "J17   /   D1"
-		(exclude_from_sim no)
-		(at 317.5 173.99 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 3.7 3.7)
+				(size 3.15 3.15)
 			)
 			(justify left)
 		)
 		(uuid "e460aafa-233b-5d4a-a208-e3dc3eaf67cf")
 	)
-	(text "16 MHz REFCLK + SYNC to all cards. Duty latches at the 1 kHz carrier peaks and valleys."
+	(text "160 contacts"
+		(exclude_from_sim no)
+		(at 29.21 115.57 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.85 2.85)
+			)
+			(justify left)
+		)
+		(uuid "e5e6060e-53d2-537a-9baa-00e9e59a3b4f")
+	)
+	(text "J12   /   U,V,W"
+		(exclude_from_sim no)
+		(at 317.5 106.68 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 3.7 3.7)
+			)
+			(justify left)
+		)
+		(uuid "e6c78153-f496-5520-9ac5-04fda82a86f9")
+	)
+	(text "6U master / 16 MHz REFCLK + SYNC to all cards. Duty latches at the 1 kHz carrier peaks and valleys."
 		(exclude_from_sim no)
 		(at 146.05 50.8 0)
 		(effects
@@ -643,9 +655,9 @@
 		)
 		(uuid "ea18db44-58bb-5541-bfe5-46d1a7ba623d")
 	)
-	(text "[9]"
+	(text "[11]"
 		(exclude_from_sim no)
-		(at 381 132.08 0)
+		(at 381 93.98 0)
 		(effects
 			(font
 				(face "Arial")
@@ -653,23 +665,11 @@
 			)
 			(justify left)
 		)
-		(uuid "eba9b6f0-70dc-5c1d-80c8-a29fc753bf31")
+		(uuid "f22c98c7-082b-5326-a1c0-b5c1506fb800")
 	)
-	(text "J11   /   U,V,W"
+	(text "[19]"
 		(exclude_from_sim no)
-		(at 317.5 93.98 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 3.7 3.7)
-			)
-			(justify left)
-		)
-		(uuid "f07b81b1-ac04-5b60-bc01-3edc4f12e092")
-	)
-	(text "[14]"
-		(exclude_from_sim no)
-		(at 381 203.2 0)
+		(at 381 201.93 0)
 		(effects
 			(font
 				(face "Arial")
@@ -691,37 +691,47 @@
 	)
 	(bus
 		(pts
-			(xy 109.22 132.08) (xy 238.76 132.08)
+			(xy 109.22 119.38) (xy 238.76 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1c266b95-d8f3-5671-b3f2-43c837de878b")
+		(uuid "2d9c8421-75c7-591c-a12d-cb14d726859c")
 	)
 	(bus
 		(pts
-			(xy 109.22 161.29) (xy 238.76 161.29)
+			(xy 109.22 106.68) (xy 238.76 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3a32bce2-60dd-5715-9e1c-d393e9a4aafc")
+		(uuid "3d861785-bf6c-5445-84a5-32b8a0d6788b")
 	)
 	(bus
 		(pts
-			(xy 109.22 148.59) (xy 238.76 148.59)
+			(xy 109.22 157.48) (xy 238.76 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5eb93401-43f2-56b4-a3c8-9768f9391acb")
+		(uuid "4dd6fef4-f9db-5b7f-9ed8-c79559ed6965")
 	)
 	(bus
 		(pts
-			(xy 109.22 203.2) (xy 238.76 203.2)
+			(xy 109.22 144.78) (xy 238.76 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c517012-9581-5f3b-b796-f8aa650bec40")
+	)
+	(bus
+		(pts
+			(xy 109.22 201.93) (xy 238.76 201.93)
 		)
 		(stroke
 			(width 0)
@@ -741,53 +751,13 @@
 	)
 	(bus
 		(pts
-			(xy 109.22 106.68) (xy 238.76 106.68)
+			(xy 109.22 176.53) (xy 238.76 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "881ff898-05ed-54a4-8f10-bc7c4e747732")
-	)
-	(bus
-		(pts
-			(xy 109.22 215.9) (xy 238.76 215.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b566af7a-fae3-513b-82df-95ece2b41461")
-	)
-	(bus
-		(pts
-			(xy 109.22 241.3) (xy 238.76 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6583e29-d04e-5b40-986d-73df51feff91")
-	)
-	(bus
-		(pts
-			(xy 109.22 228.6) (xy 238.76 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be6b821c-2781-5910-abc9-906bc0ebe1aa")
-	)
-	(bus
-		(pts
-			(xy 109.22 186.69) (xy 238.76 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3387c5f-3f57-5e0a-9ea5-f334845e93da")
+		(uuid "6c43b662-ea49-5983-8330-12691916ac2d")
 	)
 	(bus
 		(pts
@@ -797,30 +767,60 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e5e6060e-53d2-537a-9baa-00e9e59a3b4f")
+		(uuid "8b1d6055-f6ca-5a16-9520-ce7b5e507932")
 	)
 	(bus
 		(pts
-			(xy 109.22 119.38) (xy 238.76 119.38)
+			(xy 109.22 214.63) (xy 238.76 214.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e6c78153-f496-5520-9ac5-04fda82a86f9")
+		(uuid "b566af7a-fae3-513b-82df-95ece2b41461")
 	)
 	(bus
 		(pts
-			(xy 109.22 173.99) (xy 238.76 173.99)
+			(xy 109.22 240.03) (xy 238.76 240.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f7481ec6-eea6-53f3-8459-d9d1cfa65cc2")
+		(uuid "b6583e29-d04e-5b40-986d-73df51feff91")
 	)
-	(label "H6{LVDS}"
-		(at 134.62 241.3 0)
+	(bus
+		(pts
+			(xy 109.22 227.33) (xy 238.76 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be6b821c-2781-5910-abc9-906bc0ebe1aa")
+	)
+	(bus
+		(pts
+			(xy 109.22 189.23) (xy 238.76 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5f3e772-1b2c-5246-a14e-12bdf1c848e9")
+	)
+	(bus
+		(pts
+			(xy 109.22 132.08) (xy 238.76 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eba9b6f0-70dc-5c1d-80c8-a29fc753bf31")
+	)
+	(label "C6{LVDS}"
+		(at 134.62 157.48 0)
 		(effects
 			(font
 				(face "Arial")
@@ -828,95 +828,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "0dbd0466-d4a3-5a9b-bf6f-4a3a492c6355")
-	)
-	(label "C1{LVDS}"
-		(at 134.62 93.98 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.8 2.8)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e56f58a-897d-5a94-abba-7e7ec2a53171")
-	)
-	(label "H5{LVDS}"
-		(at 134.62 228.6 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.8 2.8)
-			)
-			(justify left bottom)
-		)
-		(uuid "3cc286b0-de84-5bde-8ed3-798f653f2ddd")
-	)
-	(label "H3{LVDS}"
-		(at 134.62 203.2 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.8 2.8)
-			)
-			(justify left bottom)
-		)
-		(uuid "44fd56d8-2d90-5deb-ad57-d190082eb4f0")
-	)
-	(label "H2{LVDS}"
-		(at 134.62 186.69 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.8 2.8)
-			)
-			(justify left bottom)
-		)
-		(uuid "6c43b662-ea49-5983-8330-12691916ac2d")
-	)
-	(label "H4{LVDS}"
-		(at 134.62 215.9 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.8 2.8)
-			)
-			(justify left bottom)
-		)
-		(uuid "77e1b7a6-ee15-5fe2-b53b-38d7c69b5916")
-	)
-	(label "H1{LVDS}"
-		(at 134.62 173.99 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.8 2.8)
-			)
-			(justify left bottom)
-		)
-		(uuid "9849a508-9645-500b-9505-5d4116e882ec")
-	)
-	(label "C3{LVDS}"
-		(at 134.62 119.38 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.8 2.8)
-			)
-			(justify left bottom)
-		)
-		(uuid "a6b21d5a-98a7-5905-ae56-62e31989ad9d")
-	)
-	(label "C5{LVDS}"
-		(at 134.62 148.59 0)
-		(effects
-			(font
-				(face "Arial")
-				(size 2.8 2.8)
-			)
-			(justify left bottom)
-		)
-		(uuid "c465f819-ce6b-54bf-a34b-c55cb6de0401")
+		(uuid "00c3db4b-77e5-50cc-8f73-756992fe2eee")
 	)
 	(label "C4{LVDS}"
 		(at 134.62 132.08 0)
@@ -927,10 +839,10 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "c60e7bc9-6f9b-5dbb-aa40-ddc1502da83a")
+		(uuid "01e0da8c-f2a6-5116-8399-9a7adb3396e9")
 	)
-	(label "C6{LVDS}"
-		(at 134.62 161.29 0)
+	(label "H6{LVDS}"
+		(at 134.62 240.03 0)
 		(effects
 			(font
 				(face "Arial")
@@ -938,7 +850,51 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e6860c66-db7f-5236-89c7-8cc43156dcd8")
+		(uuid "0dbd0466-d4a3-5a9b-bf6f-4a3a492c6355")
+	)
+	(label "H5{LVDS}"
+		(at 134.62 227.33 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.8 2.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "3cc286b0-de84-5bde-8ed3-798f653f2ddd")
+	)
+	(label "H3{LVDS}"
+		(at 134.62 201.93 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.8 2.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "44fd56d8-2d90-5deb-ad57-d190082eb4f0")
+	)
+	(label "H4{LVDS}"
+		(at 134.62 214.63 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.8 2.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "77e1b7a6-ee15-5fe2-b53b-38d7c69b5916")
+	)
+	(label "H2{LVDS}"
+		(at 134.62 189.23 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.8 2.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "7df8efd4-8111-5c74-8257-7405389cd3f5")
 	)
 	(label "C2{LVDS}"
 		(at 134.62 106.68 0)
@@ -949,7 +905,51 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f22c98c7-082b-5326-a1c0-b5c1506fb800")
+		(uuid "8c730535-9e35-513d-8ce8-8eb1d1e09db2")
+	)
+	(label "C5{LVDS}"
+		(at 134.62 144.78 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.8 2.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "af93ecbd-5782-53ad-b05c-a41061d4f43b")
+	)
+	(label "C1{LVDS}"
+		(at 134.62 93.98 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.8 2.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "baeba891-5964-57f1-9071-75130fd88d88")
+	)
+	(label "H1{LVDS}"
+		(at 134.62 176.53 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.8 2.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "d73b4731-0117-5de5-9fb9-d7d2727a8811")
+	)
+	(label "C3{LVDS}"
+		(at 134.62 119.38 0)
+		(effects
+			(font
+				(face "Arial")
+				(size 2.8 2.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "fbda28e4-2fcd-541a-92cd-614e5ed10775")
 	)
 	(symbol
 		(lib_id "power:+12V")
@@ -1017,7 +1017,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4d4147aa-d060-4a86-a991-2bc00db3c084")
+			(uuid "eae252b8-718b-4fed-9f7b-d2b4c259a6d5")
 		)
 		(instances
 			(project "backplane_board"
@@ -1029,7 +1029,7 @@
 		)
 	)
 	(sheet
-		(at 238.76 236.22)
+		(at 238.76 234.95)
 		(size 138.43 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1044,7 +1044,7 @@
 		)
 		(uuid "4d5df35b-b141-5869-a787-5edf85f9a467")
 		(property "Sheetname" "H6"
-			(at 293.37 241.3 0)
+			(at 293.37 240.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1056,7 +1056,7 @@
 			)
 		)
 		(property "Sheetfile" "pwm_slot.kicad_sch"
-			(at 238.76 246.38 0)
+			(at 238.76 245.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1067,7 +1067,7 @@
 			)
 		)
 		(pin "L{LVDS}" bidirectional
-			(at 238.76 241.3 180)
+			(at 238.76 240.03 180)
 			(uuid "b6072abd-da8c-5bf4-9feb-6d070beb89bd")
 			(effects
 				(font
@@ -1080,7 +1080,7 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "17")
+					(page "22")
 				)
 			)
 		)
@@ -1143,7 +1143,7 @@
 		)
 	)
 	(sheet
-		(at 238.76 156.21)
+		(at 238.76 152.4)
 		(size 138.43 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1158,7 +1158,7 @@
 		)
 		(uuid "5920e9ec-149a-52d6-a7ef-17b219b3d630")
 		(property "Sheetname" "C6"
-			(at 293.37 161.29 0)
+			(at 293.37 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1170,7 +1170,7 @@
 			)
 		)
 		(property "Sheetfile" "pwm_slot.kicad_sch"
-			(at 238.76 166.37 0)
+			(at 238.76 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1181,8 +1181,8 @@
 			)
 		)
 		(pin "L{LVDS}" bidirectional
-			(at 238.76 161.29 180)
-			(uuid "b6230d52-a898-5165-b374-bf50d879f354")
+			(at 238.76 157.48 180)
+			(uuid "c465f819-ce6b-54bf-a34b-c55cb6de0401")
 			(effects
 				(font
 					(face "Arial")
@@ -1194,14 +1194,14 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "11")
+					(page "16")
 				)
 			)
 		)
 	)
 	(sheet
 		(at 25.4 87.63)
-		(size 83.82 46.99)
+		(size 83.82 73.66)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1227,7 +1227,7 @@
 			)
 		)
 		(property "Sheetfile" "master_1.kicad_sch"
-			(at 25.4 134.62 0)
+			(at 25.4 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1281,6 +1281,28 @@
 				(justify right)
 			)
 		)
+		(pin "C5{LVDS}" bidirectional
+			(at 109.22 144.78 0)
+			(uuid "39e1b631-aeca-5af2-a3c9-554303c63db4")
+			(effects
+				(font
+					(face "Arial")
+					(size 2.65 2.65)
+				)
+				(justify right)
+			)
+		)
+		(pin "C6{LVDS}" bidirectional
+			(at 109.22 157.48 0)
+			(uuid "aca2c6e4-2fec-5bfa-9942-04b08a50e06d")
+			(effects
+				(font
+					(face "Arial")
+					(size 2.65 2.65)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
@@ -1290,7 +1312,7 @@
 		)
 	)
 	(sheet
-		(at 238.76 210.82)
+		(at 238.76 209.55)
 		(size 138.43 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1305,7 +1327,7 @@
 		)
 		(uuid "5f0c5c59-38b9-50d1-8c9a-34987e381e74")
 		(property "Sheetname" "H4"
-			(at 293.37 215.9 0)
+			(at 293.37 214.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1317,7 +1339,7 @@
 			)
 		)
 		(property "Sheetfile" "pwm_slot.kicad_sch"
-			(at 238.76 220.98 0)
+			(at 238.76 219.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1328,7 +1350,7 @@
 			)
 		)
 		(pin "L{LVDS}" bidirectional
-			(at 238.76 215.9 180)
+			(at 238.76 214.63 180)
 			(uuid "d0ec2bfa-2df8-5d6c-9104-28c780f32296")
 			(effects
 				(font
@@ -1341,7 +1363,7 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "15")
+					(page "20")
 				)
 			)
 		)
@@ -1386,7 +1408,7 @@
 		)
 		(pin "L{LVDS}" bidirectional
 			(at 238.76 132.08 180)
-			(uuid "fbda28e4-2fcd-541a-92cd-614e5ed10775")
+			(uuid "a6bad536-8a36-5733-9c69-9114fe030c3e")
 			(effects
 				(font
 					(face "Arial")
@@ -1398,13 +1420,13 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "9")
+					(page "14")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 238.76 181.61)
+		(at 238.76 184.15)
 		(size 138.43 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1419,7 +1441,7 @@
 		)
 		(uuid "ab96e053-893e-5988-877d-c52fcd606a3a")
 		(property "Sheetname" "H2"
-			(at 293.37 186.69 0)
+			(at 293.37 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1431,7 +1453,7 @@
 			)
 		)
 		(property "Sheetfile" "pwm_slot.kicad_sch"
-			(at 238.76 191.77 0)
+			(at 238.76 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1442,8 +1464,8 @@
 			)
 		)
 		(pin "L{LVDS}" bidirectional
-			(at 238.76 186.69 180)
-			(uuid "5085a0ac-860a-59d7-980c-7c8f06e18b9e")
+			(at 238.76 189.23 180)
+			(uuid "2cb24d41-d0de-5eff-8c0f-7b6cf416b642")
 			(effects
 				(font
 					(face "Arial")
@@ -1455,13 +1477,13 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "13")
+					(page "18")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 238.76 198.12)
+		(at 238.76 196.85)
 		(size 138.43 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1476,7 +1498,7 @@
 		)
 		(uuid "b0cf5123-60d5-5db2-a3ec-73c9ed540b40")
 		(property "Sheetname" "H3"
-			(at 293.37 203.2 0)
+			(at 293.37 201.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1488,7 +1510,7 @@
 			)
 		)
 		(property "Sheetfile" "pwm_slot.kicad_sch"
-			(at 238.76 208.28 0)
+			(at 238.76 207.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1499,7 +1521,7 @@
 			)
 		)
 		(pin "L{LVDS}" bidirectional
-			(at 238.76 203.2 180)
+			(at 238.76 201.93 180)
 			(uuid "dfef66a5-2750-5cbd-8df6-8890638522bc")
 			(effects
 				(font
@@ -1512,7 +1534,7 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "14")
+					(page "19")
 				)
 			)
 		)
@@ -1557,7 +1579,7 @@
 		)
 		(pin "L{LVDS}" bidirectional
 			(at 238.76 93.98 180)
-			(uuid "4583b7c7-2515-5bf9-b390-4a3b2e88120c")
+			(uuid "f07b81b1-ac04-5b60-bc01-3edc4f12e092")
 			(effects
 				(font
 					(face "Arial")
@@ -1569,7 +1591,7 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "6")
+					(page "11")
 				)
 			)
 		)
@@ -1614,7 +1636,7 @@
 		)
 		(pin "L{LVDS}" bidirectional
 			(at 238.76 106.68 180)
-			(uuid "baeba891-5964-57f1-9071-75130fd88d88")
+			(uuid "05da7509-c115-5239-b29f-f05fb06dabb6")
 			(effects
 				(font
 					(face "Arial")
@@ -1626,14 +1648,14 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "7")
+					(page "12")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 25.4 142.24)
-		(size 83.82 46.99)
+		(at 25.4 170.18)
+		(size 83.82 73.66)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1647,7 +1669,7 @@
 		)
 		(uuid "e12e6c40-f078-5648-8117-13778b4baf4d")
 		(property "Sheetname" "MASTER_B"
-			(at 29.21 147.32 0)
+			(at 29.21 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1659,7 +1681,7 @@
 			)
 		)
 		(property "Sheetfile" "master_2.kicad_sch"
-			(at 25.4 189.23 0)
+			(at 25.4 243.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1669,31 +1691,9 @@
 				)
 			)
 		)
-		(pin "C5{LVDS}" bidirectional
-			(at 109.22 148.59 0)
-			(uuid "01e0da8c-f2a6-5116-8399-9a7adb3396e9")
-			(effects
-				(font
-					(face "Arial")
-					(size 2.65 2.65)
-				)
-				(justify right)
-			)
-		)
-		(pin "C6{LVDS}" bidirectional
-			(at 109.22 161.29 0)
-			(uuid "b535f7b0-ab4a-5c1f-a7d2-639579432bab")
-			(effects
-				(font
-					(face "Arial")
-					(size 2.65 2.65)
-				)
-				(justify right)
-			)
-		)
 		(pin "H1{LVDS}" bidirectional
-			(at 109.22 173.99 0)
-			(uuid "80a4f4f1-0b61-5b84-ae6a-70bad81a59be")
+			(at 109.22 176.53 0)
+			(uuid "e6860c66-db7f-5236-89c7-8cc43156dcd8")
 			(effects
 				(font
 					(face "Arial")
@@ -1703,8 +1703,52 @@
 			)
 		)
 		(pin "H2{LVDS}" bidirectional
-			(at 109.22 186.69 0)
-			(uuid "0e23d4d7-698d-52aa-869e-dc63ee80801c")
+			(at 109.22 189.23 0)
+			(uuid "dfb4e2c5-234b-5aec-859c-aff90d34b3a7")
+			(effects
+				(font
+					(face "Arial")
+					(size 2.65 2.65)
+				)
+				(justify right)
+			)
+		)
+		(pin "H3{LVDS}" bidirectional
+			(at 109.22 201.93 0)
+			(uuid "2e605bbd-289b-5792-b32d-92916cd14966")
+			(effects
+				(font
+					(face "Arial")
+					(size 2.65 2.65)
+				)
+				(justify right)
+			)
+		)
+		(pin "H4{LVDS}" bidirectional
+			(at 109.22 214.63 0)
+			(uuid "f4e733c2-5ded-5b93-b18f-4433406af80d")
+			(effects
+				(font
+					(face "Arial")
+					(size 2.65 2.65)
+				)
+				(justify right)
+			)
+		)
+		(pin "H5{LVDS}" bidirectional
+			(at 109.22 227.33 0)
+			(uuid "f7481ec6-eea6-53f3-8459-d9d1cfa65cc2")
+			(effects
+				(font
+					(face "Arial")
+					(size 2.65 2.65)
+				)
+				(justify right)
+			)
+		)
+		(pin "H6{LVDS}" bidirectional
+			(at 109.22 240.03 0)
+			(uuid "9849a508-9645-500b-9505-5d4116e882ec")
 			(effects
 				(font
 					(face "Arial")
@@ -1716,13 +1760,13 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "4")
+					(page "7")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 238.76 143.51)
+		(at 238.76 139.7)
 		(size 138.43 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1737,7 +1781,7 @@
 		)
 		(uuid "e638b98a-0fd5-5c9d-b2d1-fd529fcf23a0")
 		(property "Sheetname" "C5"
-			(at 293.37 148.59 0)
+			(at 293.37 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1749,7 +1793,7 @@
 			)
 		)
 		(property "Sheetfile" "pwm_slot.kicad_sch"
-			(at 238.76 153.67 0)
+			(at 238.76 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1760,8 +1804,8 @@
 			)
 		)
 		(pin "L{LVDS}" bidirectional
-			(at 238.76 148.59 180)
-			(uuid "84d55a5b-5e94-5014-9bb5-18c48cf6ab59")
+			(at 238.76 144.78 180)
+			(uuid "0e23d4d7-698d-52aa-869e-dc63ee80801c")
 			(effects
 				(font
 					(face "Arial")
@@ -1773,103 +1817,13 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "10")
+					(page "15")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 25.4 196.85)
-		(size 83.82 46.99)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.254)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "e69bd2c6-baac-5da1-a914-d56409e6debd")
-		(property "Sheetname" "MASTER_C"
-			(at 29.21 201.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "Arial")
-					(size 3.7 3.7)
-				)
-				(justify left)
-			)
-		)
-		(property "Sheetfile" "master_3.kicad_sch"
-			(at 25.4 243.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "H3{LVDS}" bidirectional
-			(at 109.22 203.2 0)
-			(uuid "80ee6541-6152-56a1-879c-7d9e4f20e95e")
-			(effects
-				(font
-					(face "Arial")
-					(size 2.65 2.65)
-				)
-				(justify right)
-			)
-		)
-		(pin "H4{LVDS}" bidirectional
-			(at 109.22 215.9 0)
-			(uuid "2cb24d41-d0de-5eff-8c0f-7b6cf416b642")
-			(effects
-				(font
-					(face "Arial")
-					(size 2.65 2.65)
-				)
-				(justify right)
-			)
-		)
-		(pin "H5{LVDS}" bidirectional
-			(at 109.22 228.6 0)
-			(uuid "d5f3e772-1b2c-5246-a14e-12bdf1c848e9")
-			(effects
-				(font
-					(face "Arial")
-					(size 2.65 2.65)
-				)
-				(justify right)
-			)
-		)
-		(pin "H6{LVDS}" bidirectional
-			(at 109.22 241.3 0)
-			(uuid "7df8efd4-8111-5c74-8257-7405389cd3f5")
-			(effects
-				(font
-					(face "Arial")
-					(size 2.65 2.65)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "backplane_board"
-				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 238.76 223.52)
+		(at 238.76 222.25)
 		(size 138.43 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1884,7 +1838,7 @@
 		)
 		(uuid "ea7f3507-d521-592a-8c73-9bc6141069db")
 		(property "Sheetname" "H5"
-			(at 293.37 228.6 0)
+			(at 293.37 227.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1896,7 +1850,7 @@
 			)
 		)
 		(property "Sheetfile" "pwm_slot.kicad_sch"
-			(at 238.76 233.68 0)
+			(at 238.76 232.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1907,7 +1861,7 @@
 			)
 		)
 		(pin "L{LVDS}" bidirectional
-			(at 238.76 228.6 180)
+			(at 238.76 227.33 180)
 			(uuid "2a16d58f-8b53-5ea1-9040-39c573b1d1d9")
 			(effects
 				(font
@@ -1920,7 +1874,7 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "16")
+					(page "21")
 				)
 			)
 		)
@@ -1965,7 +1919,7 @@
 		)
 		(pin "L{LVDS}" bidirectional
 			(at 238.76 119.38 180)
-			(uuid "8c730535-9e35-513d-8ce8-8eb1d1e09db2")
+			(uuid "d433e98b-34dc-5e1b-a714-1af593a84786")
 			(effects
 				(font
 					(face "Arial")
@@ -1977,13 +1931,13 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "8")
+					(page "13")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 238.76 168.91)
+		(at 238.76 171.45)
 		(size 138.43 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1998,7 +1952,7 @@
 		)
 		(uuid "f3be4783-8ac3-5906-9ee9-b14dae343ac3")
 		(property "Sheetname" "H1"
-			(at 293.37 173.99 0)
+			(at 293.37 176.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2010,7 +1964,7 @@
 			)
 		)
 		(property "Sheetfile" "pwm_slot.kicad_sch"
-			(at 238.76 179.07 0)
+			(at 238.76 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2021,8 +1975,8 @@
 			)
 		)
 		(pin "L{LVDS}" bidirectional
-			(at 238.76 173.99 180)
-			(uuid "f4e733c2-5ded-5b93-b18f-4433406af80d")
+			(at 238.76 176.53 180)
+			(uuid "e3387c5f-3f57-5e0a-9ea5-f334845e93da")
 			(effects
 				(font
 					(face "Arial")
@@ -2034,7 +1988,7 @@
 		(instances
 			(project "backplane_board"
 				(path "/29f9f632-6225-477c-a00d-b55db6256c3e"
-					(page "12")
+					(page "17")
 				)
 			)
 		)

@@ -39,7 +39,9 @@ def validate(xml_path):
         slot = slots.index(row["slot"])
         signal = signals.index(row["signal"])
         for letter, side, polarity in [("a", "p", "P"), ("b", "n", "N")]:
-            master = (f"J{2 + slot // 4}", f"{letter}{8 * (slot % 4) + signal + 1}")
+            master_row = "abc"[(slot % 6) // 2]
+            first = 1 + 16 * (slot % 2) + 2 * signal
+            master = (f"J{2 + slot // 6}", f"{master_row}{first + (side == 'n')}")
             pwm = (f"J{11 + slot}", f"{letter}{signal + 1}")
             name = f"/{row['slot']}.{row['signal']}_{polarity}"
             if (row["master_ref"], row["master_" + side], row["pwm_ref"], row["pwm_" + side],
@@ -52,11 +54,13 @@ def validate(xml_path):
     require([("Q1", "1"), ("D1", "2"), ("R1", "1")])
     require([("Q1", "3"), ("D1", "1"), ("TP1", "1"), ("F2", "1")]
             + [(f"F{i}", "1") for i in range(11, 23)], "+12V")
-    require([("F2", "2"), ("TP3", "1"), ("J2", "c31"), ("J2", "c32")])
+    require([("F2", "2"), ("TP3", "1"), ("J2", "z16"), ("J2", "z17"),
+             ("J3", "z16"), ("J3", "z17")], "MASTER_12V_FUSED")
     ground = {("J1", "2"), ("TP2", "1"), ("R1", "2")}
-    for connector in (2, 3, 4):
-        for index in range(1, 31 if connector == 2 else 33):
-            ground.add((f"J{connector}", f"c{index}"))
+    for connector in ("J2", "J3"):
+        for row in ("z", "d"):
+            ground.update((connector, f"{row}{i}") for i in range(1, 33)
+                          if row == "d" or i not in (16, 17))
     for index in range(11, 23):
         socket = f"J{index}"
         require([(f"F{index}", "2"), (f"TP{index}", "1"), (socket, "a9"), (socket, "a10")])
@@ -95,6 +99,8 @@ def validate(xml_path):
             if ref in purchased:
                 raise ValueError(f"Duplicate BOM reference {ref}")
             purchased[ref] = (row["MPN"], row["Purchase_URL"], row["Footprint"])
+    if len(parts) != 32 or len(comps) - len(parts) != 15:
+        raise ValueError("Expected 32 purchased parts and 15 test pads")
     if parts != purchased:
         raise ValueError("BOM and schematic export disagree")
     print(f"PASS: {len(actual)} nets, 96 differential pairs, 13 isolated fused outputs, "
