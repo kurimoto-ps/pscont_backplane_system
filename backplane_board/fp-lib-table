@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "BP_Land")(type "KiCad")(uri "${KIPRJMOD}/library/BP_Land.pretty")(options "")(descr "Manufacturer land patterns")))

@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "BP")(type "KiCad")(uri "${KIPRJMOD}/library/BP.kicad_sym")(options "")(descr "PWM backplane connector pin assignments and PMOS")))
