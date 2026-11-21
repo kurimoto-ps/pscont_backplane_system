@@ -1,5 +1,7 @@
 # 6Uバックプレーンの部品配置と取付
 
+[4 HP共通カード14枚と独立DIN電源の取付案](dac_4hp/README.md) · [4 HP配置・電源取付図](dac_4hp/review.pdf)。以下は比較元の6 HP配置。
+
 [配置図（表・裏・取付断面）](placement_review.pdf) · [KiCad基板](../backplane_board.kicad_pcb) · [支持板DXF](support_plate.dxf) · [支持板・補強材STEP](support_assembly.step) · [穴位置CSV](mounting_points.csv)
 
 既設6Uクレートに、新作マスター1枚と同じ形状のPWMカード12枚を挿すための配置図。基板・支持板ともにカード挿入側から見た外形左上をXY基準とし、右が＋X、下が＋Y。DXF・STEPはCADの慣例に合わせて左下原点、上が＋Y。両者の換算は `Y_CAD = 262.05 − Y_表`。STEPのZ=0は支持板前面、＋Zがカード側。

@@ -1,0 +1,15 @@
+﻿対象,部品,数量,メーカー,型番または加工図,用途・条件,購入先URL
+盤,PS1,1,MEAN WELL,SDR-120-12,12 V / 10 A・TS35,https://www.digikey.jp/ja/products/detail/mean-well-usa-inc/SDR-120-12/7706555
+盤,DIN,1,Phoenix Contact,0801681,無孔TS35/7.5から100 mm切断・穴加工,https://www.digikey.jp/ja/products?keywords=0801681
+盤,DIN端止め,2,Phoenix Contact,0800886,レール両端,https://www.digikey.jp/ja/products/detail/phoenix-contact/0800886/308328
+盤,電源取付板,1,製作品,psu_plate.dxf,SPCC t2 / 120 × 260,
+バックプレーン,支持板,1,製作品,support_plate_4hp.dxf,A5052-H32 t3,
+バックプレーン,補強角棒,2,製作品,12 × 30 × 246,A6061-T6・各5箇所をM4タップ,
+バックプレーン,J23 J24,2,HARTING,09232486825,48極メス・既存12個に追加,https://www.digikey.jp/en/products/detail/harting/09232486825/3180447
+増設カード,カード側コネクタ,2,HARTING,09231486921,X1・X2を両方実装する場合,https://www.digikey.jp/en/products/detail/harting/09231486921/3180439
+バックプレーン,F23 F24,2,Littelfuse,0451001.MRL,共通1 A・始動波形で確認,https://www.digikey.jp/en/products/detail/littelfuse-inc/0451001-MRL/700818
+バックプレーン,F1,1,Littelfuse,0451012.MRL,既設10 Aを置換する12 A候補,https://www.digikey.jp/en/products/detail/littelfuse-inc/0451012-MRL/813070
+DAC,U_DAC,1,Analog Devices,AD3532RBCPZ-RL7,指定DAC・通販在庫未確認,https://www.mouser.jp/c/?q=AD3532RBCPZ-RL7
+DAC,U_OUT,4,Texas Instruments,OPA4197IPWR,±10 V出力・4回路/個,https://www.digikey.jp/en/products/detail/texas-instruments/OPA4197IPWR/6553891
+DAC,U_REF,1,Texas Instruments,OPA197ID,2.5 V基準バッファ,https://www.digikey.jp/en/products/detail/texas-instruments/OPA197ID/5973187
+DAC,U_ISO,1,TRACO Power,TMR 6-1222,9–18 V入力、±12 V/250 mA。偏負荷を実測,https://www.digikey.jp/ja/products/detail/traco-power/TMR-6-1222/9345154

@@ -1,5 +1,7 @@
 # バックプレーン基板 回路設計仕様
 
+[増設検討：16 ch DAC・4 HP共通スロット・電源取付（PDF／DXF／STEP）](mechanical/dac_4hp/README.md)。下のKiCad原図は比較元の12スロット版。
+
 対象はマスタ1枚、三相PWMコンバータ用カード6枚、単相チョッパ用カード6枚を同時に実装できるバックプレーン。カード間の信号配線は受動式で、電源入口に逆接保護MOSFETを実装する。電力は電源入力容量を決めるための設計予算で、実測値・デバイス全動作条件での保証値とは区別する。
 
 [全22ページの回路図PDF](backplane_board.pdf) · [KiCad 10プロジェクト](backplane_board.kicad_pro) · [購入用BOM](BOM.csv) · [端子対応表](slot_links.csv)

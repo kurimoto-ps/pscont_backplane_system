@@ -1,0 +1,158 @@
+﻿feature,reference,x_mm_from_front_left,y_mm_from_top,datum_or_drill
+socket,C1 J11,58.0,131.025,b row centre; front
+PCB flange,J11.1,57.7,106.025,diameter 2.85; PCB only
+PCB flange,J11.2,57.7,156.025,diameter 2.85; PCB only
+fuse,F11,56.0,207.5,rear
+test pad,TP11,64.0,207.5,rear
+socket,C2 J12,78.32,131.025,b row centre; front
+PCB flange,J12.1,78.02,106.025,diameter 2.85; PCB only
+PCB flange,J12.2,78.02,156.025,diameter 2.85; PCB only
+fuse,F12,76.32,207.5,rear
+test pad,TP12,84.32,207.5,rear
+socket,C3 J13,98.64,131.025,b row centre; front
+PCB flange,J13.1,98.34,106.025,diameter 2.85; PCB only
+PCB flange,J13.2,98.34,156.025,diameter 2.85; PCB only
+fuse,F13,96.64,207.5,rear
+test pad,TP13,104.64,207.5,rear
+socket,C4 J14,118.96,131.025,b row centre; front
+PCB flange,J14.1,118.66,106.025,diameter 2.85; PCB only
+PCB flange,J14.2,118.66,156.025,diameter 2.85; PCB only
+fuse,F14,116.96,207.5,rear
+test pad,TP14,124.96,207.5,rear
+socket,C5 J15,139.28,131.025,b row centre; front
+PCB flange,J15.1,138.98,106.025,diameter 2.85; PCB only
+PCB flange,J15.2,138.98,156.025,diameter 2.85; PCB only
+fuse,F15,137.28,207.5,rear
+test pad,TP15,145.28,207.5,rear
+socket,C6 J16,159.6,131.025,b row centre; front
+PCB flange,J16.1,159.3,106.025,diameter 2.85; PCB only
+PCB flange,J16.2,159.3,156.025,diameter 2.85; PCB only
+fuse,F16,157.6,207.5,rear
+test pad,TP16,165.6,207.5,rear
+socket,X1 J23,179.92,131.025,b row centre; front
+PCB flange,J23.1,179.62,106.025,diameter 2.85; PCB only
+PCB flange,J23.2,179.62,156.025,diameter 2.85; PCB only
+fuse,F23,177.92,207.5,rear
+test pad,TP23,185.92,207.5,rear
+socket,H1 J17,240.88,131.025,b row centre; front
+PCB flange,J17.1,240.58,106.025,diameter 2.85; PCB only
+PCB flange,J17.2,240.58,156.025,diameter 2.85; PCB only
+fuse,F17,242.88,207.5,rear
+test pad,TP17,250.88,207.5,rear
+socket,H2 J18,261.2,131.025,b row centre; front
+PCB flange,J18.1,260.9,106.025,diameter 2.85; PCB only
+PCB flange,J18.2,260.9,156.025,diameter 2.85; PCB only
+fuse,F18,263.2,207.5,rear
+test pad,TP18,271.2,207.5,rear
+socket,H3 J19,281.52,131.025,b row centre; front
+PCB flange,J19.1,281.22,106.025,diameter 2.85; PCB only
+PCB flange,J19.2,281.22,156.025,diameter 2.85; PCB only
+fuse,F19,283.52,207.5,rear
+test pad,TP19,291.52,207.5,rear
+socket,H4 J20,301.84,131.025,b row centre; front
+PCB flange,J20.1,301.54,106.025,diameter 2.85; PCB only
+PCB flange,J20.2,301.54,156.025,diameter 2.85; PCB only
+fuse,F20,303.84,207.5,rear
+test pad,TP20,311.84,207.5,rear
+socket,H5 J21,322.16,131.025,b row centre; front
+PCB flange,J21.1,321.86,106.025,diameter 2.85; PCB only
+PCB flange,J21.2,321.86,156.025,diameter 2.85; PCB only
+fuse,F21,324.16,207.5,rear
+test pad,TP21,332.16,207.5,rear
+socket,H6 J22,342.48,131.025,b row centre; front
+PCB flange,J22.1,342.18,106.025,diameter 2.85; PCB only
+PCB flange,J22.2,342.18,156.025,diameter 2.85; PCB only
+fuse,F22,344.48,207.5,rear
+test pad,TP22,352.48,207.5,rear
+socket,X2 J24,362.8,131.025,b row centre; front
+PCB flange,J24.1,362.5,106.025,diameter 2.85; PCB only
+PCB flange,J24.2,362.5,156.025,diameter 2.85; PCB only
+fuse,F24,364.8,207.5,rear
+test pad,TP24,372.8,207.5,rear
+socket,J2,200.24,64.35,master b row centre; front
+socket,J3,200.24,197.7,master b row centre; front
+PCB flange,J2,199.94,109.35,diameter 2.85; PCB only
+PCB flange,J2,199.94,19.35,diameter 2.85; PCB only
+PCB flange,J3,199.94,242.7,diameter 2.85; PCB only
+PCB flange,J3,199.94,152.7,diameter 2.85; PCB only
+power,J1,26.0,192.0,rear footprint origin
+power,F1,39.0,190.0,rear footprint origin
+power,Q1,51.0,190.0,rear footprint origin
+power,D1,58.5,190.0,rear footprint origin
+power,R1,58.5,195.0,rear footprint origin
+power,TP1,76.0,191.0,rear footprint origin
+power,TP2,88.0,191.0,rear footprint origin
+power,F2,170.0,192.0,rear footprint origin
+power,TP3,182.0,192.0,rear footprint origin
+PCB and plate,MH1,6.9,3.1,diameter 2.7
+PCB and plate,MH2,6.9,258.95,diameter 2.7
+PCB and plate,MH3,47.54,3.1,diameter 2.7
+PCB and plate,MH4,47.54,258.95,diameter 2.7
+PCB and plate,MH5,88.18,3.1,diameter 2.7
+PCB and plate,MH6,88.18,258.95,diameter 2.7
+PCB and plate,MH7,128.82,3.1,diameter 2.7
+PCB and plate,MH8,128.82,258.95,diameter 2.7
+PCB and plate,MH9,169.46,3.1,diameter 2.7
+PCB and plate,MH10,169.46,258.95,diameter 2.7
+PCB and plate,MH11,210.1,3.1,diameter 2.7
+PCB and plate,MH12,210.1,258.95,diameter 2.7
+PCB and plate,MH13,250.74,3.1,diameter 2.7
+PCB and plate,MH14,250.74,258.95,diameter 2.7
+PCB and plate,MH15,291.38,3.1,diameter 2.7
+PCB and plate,MH16,291.38,258.95,diameter 2.7
+PCB and plate,MH17,332.02,3.1,diameter 2.7
+PCB and plate,MH18,332.02,258.95,diameter 2.7
+PCB and plate,MH19,372.66,3.1,diameter 2.7
+PCB and plate,MH20,372.66,258.95,diameter 2.7
+PCB and plate,MH21,413.3,3.1,diameter 2.7
+PCB and plate,MH22,413.3,258.95,diameter 2.7
+PCB and plate,MH23,68.16,112.525,diameter 3.2
+PCB and plate,MH24,68.16,149.525,diameter 3.2
+PCB and plate,MH25,88.48,112.525,diameter 3.2
+PCB and plate,MH26,88.48,149.525,diameter 3.2
+PCB and plate,MH27,108.8,112.525,diameter 3.2
+PCB and plate,MH28,108.8,149.525,diameter 3.2
+PCB and plate,MH29,129.12,112.525,diameter 3.2
+PCB and plate,MH30,129.12,149.525,diameter 3.2
+PCB and plate,MH31,149.44,112.525,diameter 3.2
+PCB and plate,MH32,149.44,149.525,diameter 3.2
+PCB and plate,MH33,169.76,112.525,diameter 3.2
+PCB and plate,MH34,169.76,149.525,diameter 3.2
+PCB and plate,MH35,190.08,119.525,diameter 3.2
+PCB and plate,MH36,190.08,142.525,diameter 3.2
+PCB and plate,MH37,251.04,112.525,diameter 3.2
+PCB and plate,MH38,251.04,149.525,diameter 3.2
+PCB and plate,MH39,271.36,112.525,diameter 3.2
+PCB and plate,MH40,271.36,149.525,diameter 3.2
+PCB and plate,MH41,291.68,112.525,diameter 3.2
+PCB and plate,MH42,291.68,149.525,diameter 3.2
+PCB and plate,MH43,312.0,112.525,diameter 3.2
+PCB and plate,MH44,312.0,149.525,diameter 3.2
+PCB and plate,MH45,332.32,112.525,diameter 3.2
+PCB and plate,MH46,332.32,149.525,diameter 3.2
+PCB and plate,MH47,352.64,112.525,diameter 3.2
+PCB and plate,MH48,352.64,149.525,diameter 3.2
+PCB and plate,MH49,372.96,112.525,diameter 3.2
+PCB and plate,MH50,372.96,149.525,diameter 3.2
+PCB and plate,MH51,187.24,31.35,diameter 3.2
+PCB and plate,MH52,187.24,97.35,diameter 3.2
+PCB and plate,MH53,213.24,31.35,diameter 3.2
+PCB and plate,MH54,213.24,97.35,diameter 3.2
+PCB and plate,MH55,187.24,164.7,diameter 3.2
+PCB and plate,MH56,187.24,230.7,diameter 3.2
+PCB and plate,MH57,213.24,164.7,diameter 3.2
+PCB and plate,MH58,213.24,230.7,diameter 3.2
+plate to rail,R1,27.22,3.1,diameter 2.7
+plate to rail,R2,27.22,258.95,diameter 2.7
+plate to rail,R3,392.98,3.1,diameter 2.7
+plate to rail,R4,392.98,258.95,diameter 2.7
+plate to bar,B1.1,201.0,16,diameter 4.5
+plate to bar,B1.2,201.0,54,diameter 4.5
+plate to bar,B1.3,201.0,131.025,diameter 4.5
+plate to bar,B1.4,201.0,208,diameter 4.5
+plate to bar,B1.5,201.0,246,diameter 4.5
+plate to bar,B2.1,228.0,16,diameter 4.5
+plate to bar,B2.2,228.0,54,diameter 4.5
+plate to bar,B2.3,228.0,131.025,diameter 4.5
+plate to bar,B2.4,228.0,208,diameter 4.5
+plate to bar,B2.5,228.0,246,diameter 4.5
