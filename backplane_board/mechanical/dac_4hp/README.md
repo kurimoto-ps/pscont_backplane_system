@@ -1,5 +1,7 @@
 # 16 ch DACを収める6Uバックプレーンと盤内電源
 
+**電源配置の改版**　[正面左16 HPの着脱式電源と4 HPカード配置](../front_psu_16hp/README.md)。このページの背面・側壁電源は比較用の旧案。
+
 [カードを挿した状態の3D組立図（PDF、5ページ）](assembly_3d/PSCONT_6U_assembly_views.pdf) · [回転・分解表示できる3Dモデル（HTML入りZIP）](assembly_3d/PSCONT_6U_viewer.zip) · [組立STEP（ZIP）](assembly_3d/PSCONT_6U_STEP.zip)
 
 ![正面から見たカード配置と背面から見た電源取付](assembly_3d/assembly_preview.jpg)

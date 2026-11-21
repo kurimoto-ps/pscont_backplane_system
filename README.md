@@ -1,5 +1,7 @@
 # pscont_backplane_system
 
+**現行の機構案**　[6Uクレート・正面左16 HPの着脱式電源](backplane_board/mechanical/front_psu_16hp/README.md) · [3D組立・取付図（PDF）](backplane_board/mechanical/front_psu_16hp/PSCONT_front_PSU_views.pdf)
+
 大型電源の三相PWMコンバータと2象限単相チョッパを制御する、マスタ1枚・PWMカード最大12枚のシステム。電流制御はSTM32H745XIH6、同期と指令配信は10M16DCF484I7Gで行う。
 
 | プロジェクト | 内容 |
