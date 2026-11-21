@@ -1,0 +1,97 @@
+ID,X_mm_from_left_front,Y_mm_from_top,dia_mm,application
+MH1,6.9,3.1,2.7,PCB + plate
+MH2,6.9,258.95,2.7,PCB + plate
+MH3,47.54,3.1,2.7,PCB + plate
+MH4,47.54,258.95,2.7,PCB + plate
+MH5,88.18,3.1,2.7,PCB + plate
+MH6,88.18,258.95,2.7,PCB + plate
+MH7,128.82,3.1,2.7,PCB + plate
+MH8,128.82,258.95,2.7,PCB + plate
+MH9,169.46,3.1,2.7,PCB + plate
+MH10,169.46,258.95,2.7,PCB + plate
+MH11,210.1,3.1,2.7,PCB + plate
+MH12,210.1,258.95,2.7,PCB + plate
+MH13,250.74,3.1,2.7,PCB + plate
+MH14,250.74,258.95,2.7,PCB + plate
+MH15,291.38,3.1,2.7,PCB + plate
+MH16,291.38,258.95,2.7,PCB + plate
+MH17,332.02,3.1,2.7,PCB + plate
+MH18,332.02,258.95,2.7,PCB + plate
+MH19,372.66,3.1,2.7,PCB + plate
+MH20,372.66,258.95,2.7,PCB + plate
+MH21,413.3,3.1,2.7,PCB + plate
+MH22,413.3,258.95,2.7,PCB + plate
+MH23,28.86,112.525,3.2,PCB + plate
+MH24,28.86,149.525,3.2,PCB + plate
+MH25,59.34,112.525,3.2,PCB + plate
+MH26,59.34,149.525,3.2,PCB + plate
+MH27,89.82,112.525,3.2,PCB + plate
+MH28,89.82,149.525,3.2,PCB + plate
+MH29,120.3,112.525,3.2,PCB + plate
+MH30,120.3,149.525,3.2,PCB + plate
+MH31,150.78,112.525,3.2,PCB + plate
+MH32,150.78,149.525,3.2,PCB + plate
+MH33,181.26,112.525,3.2,PCB + plate
+MH34,181.26,149.525,3.2,PCB + plate
+MH35,252.38,112.525,3.2,PCB + plate
+MH36,252.38,149.525,3.2,PCB + plate
+MH37,282.86,112.525,3.2,PCB + plate
+MH38,282.86,149.525,3.2,PCB + plate
+MH39,313.34,112.525,3.2,PCB + plate
+MH40,313.34,149.525,3.2,PCB + plate
+MH41,343.82,112.525,3.2,PCB + plate
+MH42,343.82,149.525,3.2,PCB + plate
+MH43,374.3,112.525,3.2,PCB + plate
+MH44,374.3,149.525,3.2,PCB + plate
+MH45,404.78,112.525,3.2,PCB + plate
+MH46,404.78,149.525,3.2,PCB + plate
+MH47,187.24,31.35,3.2,PCB + plate
+MH48,187.24,97.35,3.2,PCB + plate
+MH49,213.24,31.35,3.2,PCB + plate
+MH50,213.24,97.35,3.2,PCB + plate
+MH51,187.24,164.7,3.2,PCB + plate
+MH52,187.24,230.7,3.2,PCB + plate
+MH53,213.24,164.7,3.2,PCB + plate
+MH54,213.24,230.7,3.2,PCB + plate
+R1,27.22,3.1,2.7,plate to rail
+R2,27.22,258.95,2.7,plate to rail
+R3,392.98,3.1,2.7,plate to rail
+R4,392.98,258.95,2.7,plate to rail
+B1,198,16,4.5,plate to tapped M4 bar
+B2,198,54,4.5,plate to tapped M4 bar
+B3,198,131.025,4.5,plate to tapped M4 bar
+B4,198,208,4.5,plate to tapped M4 bar
+B5,198,246,4.5,plate to tapped M4 bar
+B6,228,16,4.5,plate to tapped M4 bar
+B7,228,54,4.5,plate to tapped M4 bar
+B8,228,131.025,4.5,plate to tapped M4 bar
+B9,228,208,4.5,plate to tapped M4 bar
+B10,228,246,4.5,plate to tapped M4 bar
+J2-ear-1,199.94,109.35,2.85,socket flange / PCB only
+J2-ear-2,199.94,19.35,2.85,socket flange / PCB only
+J3-ear-3,199.94,242.7,2.85,socket flange / PCB only
+J3-ear-4,199.94,152.7,2.85,socket flange / PCB only
+J11-ear-5,17.06,106.025,2.85,socket flange / PCB only
+J11-ear-6,17.06,156.025,2.85,socket flange / PCB only
+J12-ear-7,47.54,106.025,2.85,socket flange / PCB only
+J12-ear-8,47.54,156.025,2.85,socket flange / PCB only
+J13-ear-9,78.02,106.025,2.85,socket flange / PCB only
+J13-ear-10,78.02,156.025,2.85,socket flange / PCB only
+J14-ear-11,108.5,106.025,2.85,socket flange / PCB only
+J14-ear-12,108.5,156.025,2.85,socket flange / PCB only
+J15-ear-13,138.98,106.025,2.85,socket flange / PCB only
+J15-ear-14,138.98,156.025,2.85,socket flange / PCB only
+J16-ear-15,169.46,106.025,2.85,socket flange / PCB only
+J16-ear-16,169.46,156.025,2.85,socket flange / PCB only
+J17-ear-17,240.58,106.025,2.85,socket flange / PCB only
+J17-ear-18,240.58,156.025,2.85,socket flange / PCB only
+J18-ear-19,271.06,106.025,2.85,socket flange / PCB only
+J18-ear-20,271.06,156.025,2.85,socket flange / PCB only
+J19-ear-21,301.54,106.025,2.85,socket flange / PCB only
+J19-ear-22,301.54,156.025,2.85,socket flange / PCB only
+J20-ear-23,332.02,106.025,2.85,socket flange / PCB only
+J20-ear-24,332.02,156.025,2.85,socket flange / PCB only
+J21-ear-25,362.5,106.025,2.85,socket flange / PCB only
+J21-ear-26,362.5,156.025,2.85,socket flange / PCB only
+J22-ear-27,392.98,106.025,2.85,socket flange / PCB only
+J22-ear-28,392.98,156.025,2.85,socket flange / PCB only
