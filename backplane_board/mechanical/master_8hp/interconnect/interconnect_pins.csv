@@ -1,0 +1,230 @@
+﻿interface,physical_pin,signal,endpoints,direction,basis
+XR,1,GND,logic GND,return,proposed
+XR,2,ADC24_1_DRDY,R1 / C:J10-18,R>parent>C,proposed
+XR,3,GND,logic GND,return,proposed
+XR,4,ADC24_1_DATA,R2 / C:J10-20,R>parent>C,proposed
+XR,5,GND,logic GND,return,proposed
+XR,6,ADC24_1_SCLK,R3 / C:J10-22,R>parent>C,proposed
+XR,7,GND,logic GND,return,proposed
+XR,8,ADC24_2_DRDY,R4 / C:J10-26,R>parent>C,proposed
+XR,9,GND,logic GND,return,proposed
+XR,10,ADC24_2_DATA,R5 / C:J10-28,R>parent>C,proposed
+XR,11,GND,logic GND,return,proposed
+XR,12,ADC24_2_SCLK,R6 / C:J10-30,R>parent>C,proposed
+XR,13,GND,logic GND,return,proposed
+XR,14,ADC24_3_DRDY,R7 / C:J10-34,R>parent>C,proposed
+XR,15,GND,logic GND,return,proposed
+XR,16,ADC24_3_DATA,R8 / C:J10-36,R>parent>C,proposed
+XR,17,GND,logic GND,return,proposed
+XR,18,ADC24_3_SCLK,R9 / C:J10-38,R>parent>C,proposed
+XR,19,GND,logic GND,return,proposed
+XR,20,ADDATA16,R10 / C:J10-44,R>parent>C,proposed
+XR,21,+5V,optical front end,supply,proposed
+XR,22,+5V,optical front end,supply,proposed
+XR,23,GND,logic GND,return,proposed
+XR,24,GND,logic GND,return,proposed
+XR,25,+3.3V,local supply,supply,proposed
+XR,26,+3.3V,local supply,supply,proposed
+XR,27,GND,logic GND,return,proposed
+XR,28,GND,logic GND,return,proposed
+XR,29,NC,"reserve, leave open",-,proposed
+XR,30,NC,"reserve, leave open",-,proposed
+XR,31,NC,"reserve, leave open",-,proposed
+XR,32,NC,"reserve, leave open",-,proposed
+XR,33,NC,"reserve, leave open",-,proposed
+XR,34,NC,"reserve, leave open",-,proposed
+XR,35,NC,"reserve, leave open",-,proposed
+XR,36,NC,"reserve, leave open",-,proposed
+XR,37,NC,"reserve, leave open",-,proposed
+XR,38,NC,"reserve, leave open",-,proposed
+XR,39,NC,"reserve, leave open",-,proposed
+XR,40,NC,"reserve, leave open",-,proposed
+XR,41,NC,"reserve, leave open",-,proposed
+XR,42,NC,"reserve, leave open",-,proposed
+XR,43,NC,"reserve, leave open",-,proposed
+XR,44,NC,"reserve, leave open",-,proposed
+XR,45,NC,"reserve, leave open",-,proposed
+XR,46,NC,"reserve, leave open",-,proposed
+XR,47,NC,"reserve, leave open",-,proposed
+XR,48,NC,"reserve, leave open",-,proposed
+XR,49,NC,"reserve, leave open",-,proposed
+XR,50,NC,"reserve, leave open",-,proposed
+XR,51,NC,"reserve, leave open",-,proposed
+XR,52,NC,"reserve, leave open",-,proposed
+XR,53,NC,"reserve, leave open",-,proposed
+XR,54,NC,"reserve, leave open",-,proposed
+XR,55,NC,"reserve, leave open",-,proposed
+XR,56,NC,"reserve, leave open",-,proposed
+XR,57,NC,"reserve, leave open",-,proposed
+XR,58,NC,"reserve, leave open",-,proposed
+XR,59,NC,"reserve, leave open",-,proposed
+XR,60,NC,"reserve, leave open",-,proposed
+XL,1,GND,logic GND,return,proposed
+XL,2,S1_CLK,S1 / C:J7-75,L>parent>C,proposed
+XL,3,GND,logic GND,return,proposed
+XL,4,S2_RX,S2 / C endpoint TBD,L>parent>C,proposed
+XL,5,GND,logic GND,return,proposed
+XL,6,S3_RX,S3 / C endpoint TBD,L>parent>C,proposed
+XL,7,GND,logic GND,return,proposed
+XL,8,ADC16_SCLK,T1 / C:J9-58,C>parent>L,proposed
+XL,9,GND,logic GND,return,proposed
+XL,10,ADC16_FS,T2 / C:J9-60,C>parent>L,proposed
+XL,11,GND,logic GND,return,proposed
+XL,12,ADC16_CONVSTART,T3 / C:J9-62,C>parent>L,proposed
+XL,13,GND,logic GND,return,proposed
+XL,14,NC,"reserve, leave open",-,proposed
+XL,15,GND,logic GND,return,proposed
+XL,16,NC,"reserve, leave open",-,proposed
+XL,17,GND,logic GND,return,proposed
+XL,18,NC,"reserve, leave open",-,proposed
+XL,19,GND,logic GND,return,proposed
+XL,20,NC,"reserve, leave open",-,proposed
+XL,21,+5V,optical front end,supply,proposed
+XL,22,+5V,optical front end,supply,proposed
+XL,23,GND,logic GND,return,proposed
+XL,24,GND,logic GND,return,proposed
+XL,25,+3.3V,local supply,supply,proposed
+XL,26,+3.3V,local supply,supply,proposed
+XL,27,GND,logic GND,return,proposed
+XL,28,GND,logic GND,return,proposed
+XL,29,NC,"reserve, leave open",-,proposed
+XL,30,NC,"reserve, leave open",-,proposed
+XL,31,NC,"reserve, leave open",-,proposed
+XL,32,NC,"reserve, leave open",-,proposed
+XL,33,NC,"reserve, leave open",-,proposed
+XL,34,NC,"reserve, leave open",-,proposed
+XL,35,NC,"reserve, leave open",-,proposed
+XL,36,NC,"reserve, leave open",-,proposed
+XL,37,NC,"reserve, leave open",-,proposed
+XL,38,NC,"reserve, leave open",-,proposed
+XL,39,NC,"reserve, leave open",-,proposed
+XL,40,NC,"reserve, leave open",-,proposed
+XL,41,NC,"reserve, leave open",-,proposed
+XL,42,NC,"reserve, leave open",-,proposed
+XL,43,NC,"reserve, leave open",-,proposed
+XL,44,NC,"reserve, leave open",-,proposed
+XL,45,NC,"reserve, leave open",-,proposed
+XL,46,NC,"reserve, leave open",-,proposed
+XL,47,NC,"reserve, leave open",-,proposed
+XL,48,NC,"reserve, leave open",-,proposed
+XL,49,NC,"reserve, leave open",-,proposed
+XL,50,NC,"reserve, leave open",-,proposed
+XL,51,NC,"reserve, leave open",-,proposed
+XL,52,NC,"reserve, leave open",-,proposed
+XL,53,NC,"reserve, leave open",-,proposed
+XL,54,NC,"reserve, leave open",-,proposed
+XL,55,NC,"reserve, leave open",-,proposed
+XL,56,NC,"reserve, leave open",-,proposed
+XL,57,NC,"reserve, leave open",-,proposed
+XL,58,NC,"reserve, leave open",-,proposed
+XL,59,NC,"reserve, leave open",-,proposed
+XL,60,NC,"reserve, leave open",-,proposed
+XETH,1,GND,logic GND,return,proposed
+XETH,2,REF_CLK,PA1 / PHY-14,E>C,proposed
+XETH,3,GND,logic GND,return,proposed
+XETH,4,RXD0,PC4 / PHY-8,E>C,proposed
+XETH,5,GND,logic GND,return,proposed
+XETH,6,RXD1,PC5 / PHY-7,E>C,proposed
+XETH,7,GND,logic GND,return,proposed
+XETH,8,CRS_DV,PA7 / PHY-11,E>C,proposed
+XETH,9,GND,logic GND,return,proposed
+XETH,10,TX_EN,PG11 / PHY-16,C>E,proposed
+XETH,11,GND,logic GND,return,proposed
+XETH,12,TXD0,PG13 / PHY-17,C>E,proposed
+XETH,13,GND,logic GND,return,proposed
+XETH,14,TXD1,PB13 / PHY-18,C>E,proposed
+XETH,15,GND,logic GND,return,proposed
+XETH,16,MDC,PC1 / PHY-13,C>E,proposed
+XETH,17,GND,logic GND,return,proposed
+XETH,18,MDIO,PA2 / PHY-12,C<>E,proposed
+XETH,19,GND,logic GND,return,proposed
+XETH,20,nRST,system_NRST (via R104) / PHY-15,C>E,proposed
+XETH,21,NC,"reserve, leave open",-,proposed
+XETH,22,NC,"reserve, leave open",-,proposed
+XETH,23,GND,logic GND,return,proposed
+XETH,24,GND,logic GND,return,proposed
+XETH,25,+3.3V,local supply,supply,proposed
+XETH,26,+3.3V,local supply,supply,proposed
+XETH,27,GND,logic GND,return,proposed
+XETH,28,GND,logic GND,return,proposed
+XETH,29,NC,"reserve, leave open",-,proposed
+XETH,30,NC,"reserve, leave open",-,proposed
+XETH,31,NC,"reserve, leave open",-,proposed
+XETH,32,NC,"reserve, leave open",-,proposed
+XETH,33,NC,"reserve, leave open",-,proposed
+XETH,34,NC,"reserve, leave open",-,proposed
+XETH,35,NC,"reserve, leave open",-,proposed
+XETH,36,NC,"reserve, leave open",-,proposed
+XETH,37,NC,"reserve, leave open",-,proposed
+XETH,38,NC,"reserve, leave open",-,proposed
+XETH,39,NC,"reserve, leave open",-,proposed
+XETH,40,NC,"reserve, leave open",-,proposed
+XETH,41,NC,"reserve, leave open",-,proposed
+XETH,42,NC,"reserve, leave open",-,proposed
+XETH,43,NC,"reserve, leave open",-,proposed
+XETH,44,NC,"reserve, leave open",-,proposed
+XETH,45,NC,"reserve, leave open",-,proposed
+XETH,46,NC,"reserve, leave open",-,proposed
+XETH,47,NC,"reserve, leave open",-,proposed
+XETH,48,NC,"reserve, leave open",-,proposed
+XETH,49,NC,"reserve, leave open",-,proposed
+XETH,50,NC,"reserve, leave open",-,proposed
+XETH,51,NC,"reserve, leave open",-,proposed
+XETH,52,NC,"reserve, leave open",-,proposed
+XETH,53,NC,"reserve, leave open",-,proposed
+XETH,54,NC,"reserve, leave open",-,proposed
+XETH,55,NC,"reserve, leave open",-,proposed
+XETH,56,NC,"reserve, leave open",-,proposed
+XETH,57,NC,"reserve, leave open",-,proposed
+XETH,58,NC,"reserve, leave open",-,proposed
+XETH,59,NC,"reserve, leave open",-,proposed
+XETH,60,NC,"reserve, leave open",-,proposed
+H-PI,1,J3-1,front J3-1 to parent H-PI-1,PLC>parent,legacy pin number
+H-PI,2,J3-2,front J3-2 to parent H-PI-2,PLC>parent,legacy pin number
+H-PI,3,J3-3,front J3-3 to parent H-PI-3,PLC>parent,legacy pin number
+H-PI,4,J3-4,front J3-4 to parent H-PI-4,PLC>parent,legacy pin number
+H-PI,5,J3-5,front J3-5 to parent H-PI-5,PLC>parent,legacy pin number
+H-PI,6,J3-6,front J3-6 to parent H-PI-6,PLC>parent,legacy pin number
+H-PI,7,J3-7,front J3-7 to parent H-PI-7,PLC>parent,legacy pin number
+H-PI,8,J3-8,front J3-8 to parent H-PI-8,PLC>parent,legacy pin number
+H-PI,9,J3-9,front J3-9 to parent H-PI-9,PLC>parent,legacy pin number
+H-PI,10,J3-10,front J3-10 to parent H-PI-10,PLC>parent,legacy pin number
+H-PI,11,J3-11,front J3-11 to parent H-PI-11,PLC>parent,legacy pin number
+H-PI,12,J3-12,front J3-12 to parent H-PI-12,PLC>parent,legacy pin number
+H-PI,13,J3-13,front J3-13 to parent H-PI-13,PLC>parent,legacy pin number
+H-PI,14,J3-14,front J3-14 to parent H-PI-14,PLC>parent,legacy pin number
+H-PI,15,J3-15,front J3-15 to parent H-PI-15,PLC>parent,legacy pin number
+H-PI,16,J3-16,front J3-16 to parent H-PI-16,PLC>parent,legacy pin number
+H-PI,17,+24V (TEP521C),front J3-17 to parent H-PI-17,field common,legacy pin number
+H-PI,18,+24V (TEP521C),front J3-18 to parent H-PI-18,field common,legacy pin number
+H-PI,19,+24V (TEP521C),front J3-19 to parent H-PI-19,field common,legacy pin number
+H-PI,20,+24V (TEP521C),front J3-20 to parent H-PI-20,field common,legacy pin number
+H-PO,1,J4-1,front J4-1 to parent H-PO-1,parent>PLC,legacy pin number
+H-PO,2,J4-2,front J4-2 to parent H-PO-2,parent>PLC,legacy pin number
+H-PO,3,J4-3,front J4-3 to parent H-PO-3,parent>PLC,legacy pin number
+H-PO,4,J4-4,front J4-4 to parent H-PO-4,parent>PLC,legacy pin number
+H-PO,5,J4-5,front J4-5 to parent H-PO-5,parent>PLC,legacy pin number
+H-PO,6,J4-6,front J4-6 to parent H-PO-6,parent>PLC,legacy pin number
+H-PO,7,J4-7,front J4-7 to parent H-PO-7,parent>PLC,legacy pin number
+H-PO,8,J4-8,front J4-8 to parent H-PO-8,parent>PLC,legacy pin number
+H-PO,9,J4-9,front J4-9 to parent H-PO-9,parent>PLC,legacy pin number
+H-PO,10,J4-10,front J4-10 to parent H-PO-10,parent>PLC,legacy pin number
+H-PO,11,J4-11,front J4-11 to parent H-PO-11,parent>PLC,legacy pin number
+H-PO,12,J4-12,front J4-12 to parent H-PO-12,parent>PLC,legacy pin number
+H-PO,13,J4-13,front J4-13 to parent H-PO-13,parent>PLC,legacy pin number
+H-PO,14,J4-14,front J4-14 to parent H-PO-14,parent>PLC,legacy pin number
+H-PO,15,J4-15,front J4-15 to parent H-PO-15,parent>PLC,legacy pin number
+H-PO,16,J4-16,front J4-16 to parent H-PO-16,parent>PLC,legacy pin number
+H-PO,17,-24V (TEP521C),front J4-17 to parent H-PO-17,field common,legacy pin number
+H-PO,18,-24V (TEP521C),front J4-18 to parent H-PO-18,field common,legacy pin number
+H-PO,19,-24V (TEP521C),front J4-19 to parent H-PO-19,field common,legacy pin number
+H-PO,20,-24V (TEP521C),front J4-20 to parent H-PO-20,field common,legacy pin number
+H-RS,1,NC,front DE9-1,unpopulated,legacy pin number
+H-RS,2,RXD,front DE9-2,field>ADM3202 R1IN,legacy pin number
+H-RS,3,TXD,front DE9-3,ADM3202 T1OUT>field,legacy pin number
+H-RS,4,NC,front DE9-4,unpopulated,legacy pin number
+H-RS,5,SG,front DE9-5,signal return,legacy pin number
+H-RS,6,NC,front DE9-6,unpopulated,legacy pin number
+H-RS,7,RTS,front DE9-7,ADM3202 T2OUT>field,legacy pin number
+H-RS,8,CTS,front DE9-8,field>ADM3202 R2IN,legacy pin number
+H-RS,9,NC,front DE9-9,unpopulated,legacy pin number
