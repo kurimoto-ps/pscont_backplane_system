@@ -1,5 +1,7 @@
 # 6Uクレートの前面着脱式電源と4 HPカード配置
 
+[8 HPマスター前面I/Oの実寸配置（光16口・電気4口）](../master_8hp/README.md)
+
 正面左の16 HPを12 V電源専用ベイに割り当てる。電源カセットを抜くと、電源本体とオスH15が手前へ移動し、AC入力、筐体PE、メスH15、J1行きのDC配線はクレートに残る。
 
 [3D組立・交換手順・取付寸法（PDF、6ページ）](PSCONT_front_PSU_views.pdf) · [回転できるオフライン3Dビューア（ZIP）](PSCONT_front_PSU_viewer.zip) · [組立CAD（STEP入りZIP）](PSCONT_front_PSU_STEP.zip)
