@@ -1,6 +1,8 @@
 # 6Uバックプレーンの部品配置と取付
 
-**現行案**　[電源を前面左16 HPに収めた配置と固定方法](front_psu_16hp/README.md) · [3D組立図（PDF）](front_psu_16hp/PSCONT_front_PSU_views.pdf)。以下は先行版の記録。
+**2系統の収容案**　[8 HP電源ベイと36 HPのカード群2組](dual_master_crate/README.md) · [正面図・電源比較（PDF）](dual_master_crate/dual_master_crate.pdf)。
+
+**1マスター版**　[電源を前面左16 HPに収めた配置と固定方法](front_psu_16hp/README.md) · [3D組立図（PDF）](front_psu_16hp/PSCONT_front_PSU_views.pdf)。以下は先行版の記録。
 
 [4 HP共通カード14枚と独立DIN電源の取付案](dac_4hp/README.md) · [4 HP配置・電源取付図](dac_4hp/review.pdf)。以下は比較元の6 HP配置。
 

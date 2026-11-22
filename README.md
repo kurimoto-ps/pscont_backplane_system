@@ -1,8 +1,10 @@
 # pscont_backplane_system
 
-**現行の機構案**　[6Uクレート・正面左16 HPの着脱式電源](backplane_board/mechanical/front_psu_16hp/README.md) · [3D組立・取付図（PDF）](backplane_board/mechanical/front_psu_16hp/PSCONT_front_PSU_views.pdf)
+**2マスターのクレート収容案**　[電源8 HP＋コンバータ36 HP＋チョッパ36 HP](backplane_board/mechanical/dual_master_crate/README.md) · [正面図・電源ベイの立体図・容量比較（PDF）](backplane_board/mechanical/dual_master_crate/dual_master_crate.pdf)
 
-大型電源の三相PWMコンバータと2象限単相チョッパを制御する、マスタ1枚・PWMカード最大12枚のシステム。電流制御はSTM32H745XIH6、同期と指令配信は10M16DCF484I7Gで行う。
+**比較元の1マスター機構案**　[6Uクレート・正面左16 HPの着脱式電源](backplane_board/mechanical/front_psu_16hp/README.md) · [3D組立・取付図（PDF）](backplane_board/mechanical/front_psu_16hp/PSCONT_front_PSU_views.pdf)
+
+大型電源の三相PWMコンバータと2象限単相チョッパを制御するシステム。電流制御はSTM32H745XIH6、同期と指令配信は10M16DCF484I7Gで行う。2マスター案では各系統がPWM 6枚とDAC 1枚を担当する。下表のKiCad設計は先行する1マスター版。
 
 | プロジェクト | 内容 |
 |---|---|
