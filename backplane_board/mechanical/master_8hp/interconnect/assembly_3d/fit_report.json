@@ -1,4 +1,10 @@
 {
+  "F06_housing_review_X_Y_D_mm": [
+    11.0,
+    13.4,
+    15.0
+  ],
+  "F06_axis_assignment": "provisional; catalog does not identify axes",
   "selected_clearances_mm": {
     "H-PO / XR-mate": 2.433,
     "H-PO / PCB_P": 1.31,

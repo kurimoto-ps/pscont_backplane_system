@@ -125,11 +125,19 @@ for r in ports:
     g='R' if tag.startswith('R') else 'L'
     # Package envelopes registered to panel axes. Exact optical-axis to solder
     # plane offsets must be obtained before a hole pattern can be released.
-    w,h,dep=(10.38,12.7,28.65) if kind=='SC' else (11,15,15)
+    w=float(r['body_W_mm_review'])
+    h=float(r['body_H_mm_review'])
+    dep=28.65 if kind=='SC' else 15.0
+    # Hitachi only labels the three values as size. The X/Y/D assignment is provisional.
+    if kind=='F06':
+        assert sorted((w,h,dep)) == [11.0,13.4,15.0], (tag,w,h,dep)
     face=face.cut(b(x-w/2-.45,-3,y-h/2-.45,w+.9,5,h+.9))
     sh=b(x-w/2,-2.3,y-h/2,w,dep,h)
     if kind=='SC':sh=sh.cut(b(x-3.5,-3,y-4.15,7,7,8.3))
     else:sh=sh.cut(b(x-3.65,-3,y-4.5,7.3,5.2,9))
+    if kind=='F06':
+        bb=sh.BoundBox
+        assert max(abs(v-ref) for v,ref in zip((bb.XLength,bb.ZLength,bb.YLength),(w,h,dep)))<1e-6
     put(tag+'-'+kind,g,sh,'port','38546a' if g=='R' else ('475968' if kind=='SC' else '70524d'))
     # Mount plane allowance, not measured package features.
     rear=22.17 if g=='R' else 15.57
@@ -196,7 +204,7 @@ for a,c in itertools.combinations(ports,2):
 service.sort()
 watch=[('H-PO','XR-mate'),('H-PO','PCB_P'),('H-PO','support-spine'),('H-PI','PCB_P'),('H-RS','PCB_L'),('PCB_R','PCB_E'),('PCB_M','PCB_C'),('PCB_C','PCB_E')]
 clearance={a+' / '+b:round(shapes[a].distToShape(shapes[b])[0],3) for a,b in watch}
-report={'selected_clearances_mm':clearance,'pcbs':rows,'removed_header_envelopes':status,'front_service_min':service[:8],'unexpected_intersections_mm3':clash,
+report={'F06_housing_review_X_Y_D_mm':[11.0,13.4,15.0], 'F06_axis_assignment':'provisional; catalog does not identify axes', 'selected_clearances_mm':clearance,'pcbs':rows,'removed_header_envelopes':status,'front_service_min':service[:8],'unexpected_intersections_mm3':clash,
         'route_mm_without_slack':{h:round(sum(math.dist(a,bp) for a,bp in zip(p,p[1:])),1) for h,p in paths.items()},
         'board_pairs_checked':15,'fx10_fx8c_interfaces_checked':len(mates)}
 (out/'fit_report.json').write_bytes((json.dumps(report,indent=2)+'\n').encode('utf8'))

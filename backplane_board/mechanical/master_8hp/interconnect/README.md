@@ -1,6 +1,6 @@
 # 6U・8 HPマスター　演算子基板と前面I/Oの接続案
 
-[3D組立図・基板別外形・ハーネス配線（PDF・6ページ）](master_front_interconnect.pdf) ｜ [回転・分解できる3Dビューア（ZIP）](assembly_3d/master_8hp_viewer.zip) ｜ [組立STEP（ZIP）](assembly_3d/master_8hp_STEP.zip) ｜ [基板台帳（CSV）](assembly_3d/board_register.csv) ｜ [内部端子割付案（CSV）](interconnect_pins.csv) ｜ [前板の実寸図](../README.md)
+[3D組立図・基板別外形・ハーネス配線（PDF・7ページ）](master_front_interconnect.pdf) ｜ [回転・分解できる3Dビューア（ZIP）](assembly_3d/master_8hp_viewer.zip) ｜ [組立STEP（ZIP）](assembly_3d/master_8hp_STEP.zip) ｜ [基板台帳（CSV）](assembly_3d/board_register.csv) ｜ [内部端子割付案（CSV）](interconnect_pins.csv) ｜ [前板の実寸図](../README.md)
 
 **マスターカード1台は6種類・各1枚、計6枚。新規5種類（M・R・L・E・P）と既存設計の改版1種類（C）を作る。** 6枚で8 HPを占める。PはJ3・J4を両方載せる1枚の受動基板。RS-232Cは前板固定のはんだカップ型DE-9を配線するので基板は不要。クレート側バックプレーン、PWM・DAC各カードはこの台数に含まれない。
 
@@ -48,6 +48,16 @@ H-PI/H-POはラッチ付圧着、同一筐体を用いる場合も異なる誤�
 | S2/3 | 増設HFBR受信2口 | XLに2本を確保。信号種別・パルス幅・無信号期間を設備側と合わせて子接点を確定。クロック用途なら専用クロック入力と制約を確認 |
 
 TEP523Aの受信バッファ、TEP526Aの送信駆動、TEP521Cの光クロック入力をそれぞれ前面基板へ寄せる。旧母J6のHFBR-24E6Zはアナログ出力で、既設回路はC35でAC結合している。S1はこの受信器・整形段まで移す。S2/S3が単発イベントや長い静止レベルを伝える場合には、対応する光送受信の形式と無信号時レベルを確認して回路を決める。生の受信アナログ出力を親に伸ばさない。R上で3.3 V化し、各ADC24のSCLKとDATA間の遅延差を受光器・バッファ・親・FX10まで含めて評価。XR/XLは信号隣接GNDを設け、駆動側に直列ダンピングの実装位置を用意する。電源の割付本数は全チャネル消費電流・接点温度上昇・許容降下で最終決定する。
+
+### 光素子の寸法照合
+
+| 部品／用途 | 前板への本体投影 X × Y（mm） | 挿抜方向の奥行 D（mm） | 寸法の扱い |
+|---|---:|---:|---|
+| 日立 DS9300／DR9300、F06、T1–T3／R1–R10 | 11 × 13.4（仮） | 15（仮） | メーカー公表は三辺11 × 15 × 13.4 mm。「サイズ」欄に軸名は記載されていない。外形の軸対応、光軸と端子面は要照合 |
+| Broadcom HFBR-24E6Z、SC、S1–S3 | 10.38 × 12.7 | 28.65 | SC外形図（12頁）を今回の立てたカードに投影。取り付けピンは除く |
+| Broadcom HFBR-1522ETZ／2522ETZ、PWMカード用 | 約7.6 × 12.2（同じ基板姿勢の場合） | 18.8 | 横型の機構図（4頁）。幅は10.2 mmに連結突起2.0 mmを含む。マスターカードへの搭載はない |
+
+旧版の3D本体はX・Y・D＝11・15・15 mmで、日立の13.4 mmの辺が欠けていた。修正版では公表された三辺を使用。前板の操作枠16 mm角は設計上の割付。光軸高さ、開口寸法、推奨ランド・プラグの操作余裕はこの三辺から確定できない。図示の向きで右列17.4 mmピッチから本体の13.4 mmを引くと隙間4.0 mm。16 mmの操作枠どうしは1.4 mm。PDF第7頁に同一縮尺で正面・側面を示す。[日立HyLinkカタログ2頁](https://www.hitachi-ite.co.jp/products/catalog/pdf/hylink.pdf)・[Broadcom SCポート外形](https://docs.broadcom.com/doc/AV02-0176EN)・[Broadcom PWM用横型外形](https://docs.broadcom.com/doc/AV02-3283EN)
 
 ## Ethernetの配置と改版
 

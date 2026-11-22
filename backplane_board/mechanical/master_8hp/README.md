@@ -17,7 +17,7 @@
 
 - 正面左上を原点とし、上15.5 mm、下11.45 mmを取付用に予約。各接続口のメーカー外形または保守側の本体枠と、別途設定したプラグ・操作の枠をPDFに示した。内側の図形は設計用の投影で、開口の加工指示は含まない。
 - ヒロセの20極PLCヘッダは本体長44.7 mm、レバー全開長63.8 mm。縦向きで中心間隔65.5 mmを取ると、両方のレバーを開いた状態の枠の間に1.7 mm残る。実装時は前板がレバーの動きを妨げないよう、窓形状・前後位置を決める。[Hiroseカタログ7頁](https://www.marutsu.co.jp/contents/shop/marutsu/datasheet/HIF3B_catalog.pdf)
-- DS/DRの公表外形11 × 15 × 13.4 mmを15 mm角で囲んだ。右列は17.4 mmピッチで本体枠間2.4 mm。比較用の市販プラグは、F06形で正面9 × 約12・長さ26 mm、SCで7.5 × 9・長さ57 mmの例がある。F06/SCの相手ケーブル品番とブーツ寸法は現物で合わせる。[HyLinkカタログ](https://www.hitachi-ite.co.jp/products/catalog/pdf/hylink.pdf) · [F06・SCプラグの寸法例](https://www.melsc.co.jp/business/catalog/pdf/fa/x902404-877.pdf)
+- 日立HyLinkのDS9300/DR9300欄は「サイズ(mm)」11 × 15 × 13.4で、三辺の軸名は未記載。前板投影X × Y＝11 × 13.4 mm、奥行D＝15 mmを図示上の仮定として、2Dと3Dで揃えた。16 × 16 mmはプラグ操作用の仮枠。右列17.4 mmピッチでは、本体投影間はこの仮定で4.0 mm、仮に15 mmの辺が縦でも2.4 mm、操作枠間は1.4 mm。比較用の市販プラグは、F06形で正面9 × 約12・長さ26 mm、SCで7.5 × 9・長さ57 mmの例がある。F06/SCの相手ケーブル品番とブーツ寸法は現物で合わせる。[HyLinkカタログ](https://www.hitachi-ite.co.jp/products/catalog/pdf/hylink.pdf) · [F06・SCプラグの寸法例](https://www.melsc.co.jp/business/catalog/pdf/fa/x902404-877.pdf)
 - 全20口の操作枠について、190組の相互間隔と前板外形への収容を計算。最小間隔1.0 mmは設定した枠どうしの隙間を示す。D-subはフード厚19 mm × 長さ35 mm、RJ45はブーツ・ラッチを含め18 × 20 mmを仮の上限とした。
 
 ### マスターカード内への組込み
