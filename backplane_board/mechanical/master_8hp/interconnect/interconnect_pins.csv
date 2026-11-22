@@ -1,124 +1,20 @@
 ﻿interface,physical_pin,signal,endpoints,direction,basis
-XR,1,GND,logic GND,return,proposed
-XR,2,ADC24_1_DRDY,R1 / C:J10-18,R>parent>C,proposed
-XR,3,GND,logic GND,return,proposed
-XR,4,ADC24_1_DATA,R2 / C:J10-20,R>parent>C,proposed
-XR,5,GND,logic GND,return,proposed
-XR,6,ADC24_1_SCLK,R3 / C:J10-22,R>parent>C,proposed
-XR,7,GND,logic GND,return,proposed
-XR,8,ADC24_2_DRDY,R4 / C:J10-26,R>parent>C,proposed
-XR,9,GND,logic GND,return,proposed
-XR,10,ADC24_2_DATA,R5 / C:J10-28,R>parent>C,proposed
-XR,11,GND,logic GND,return,proposed
-XR,12,ADC24_2_SCLK,R6 / C:J10-30,R>parent>C,proposed
-XR,13,GND,logic GND,return,proposed
-XR,14,ADC24_3_DRDY,R7 / C:J10-34,R>parent>C,proposed
-XR,15,GND,logic GND,return,proposed
-XR,16,ADC24_3_DATA,R8 / C:J10-36,R>parent>C,proposed
-XR,17,GND,logic GND,return,proposed
-XR,18,ADC24_3_SCLK,R9 / C:J10-38,R>parent>C,proposed
-XR,19,GND,logic GND,return,proposed
-XR,20,ADDATA16,R10 / C:J10-44,R>parent>C,proposed
-XR,21,+5V,optical front end,supply,proposed
-XR,22,+5V,optical front end,supply,proposed
-XR,23,GND,logic GND,return,proposed
-XR,24,GND,logic GND,return,proposed
-XR,25,+3.3V,local supply,supply,proposed
-XR,26,+3.3V,local supply,supply,proposed
-XR,27,GND,logic GND,return,proposed
-XR,28,GND,logic GND,return,proposed
-XR,29,NC,"reserve, leave open",-,proposed
-XR,30,NC,"reserve, leave open",-,proposed
-XR,31,NC,"reserve, leave open",-,proposed
-XR,32,NC,"reserve, leave open",-,proposed
-XR,33,NC,"reserve, leave open",-,proposed
-XR,34,NC,"reserve, leave open",-,proposed
-XR,35,NC,"reserve, leave open",-,proposed
-XR,36,NC,"reserve, leave open",-,proposed
-XR,37,NC,"reserve, leave open",-,proposed
-XR,38,NC,"reserve, leave open",-,proposed
-XR,39,NC,"reserve, leave open",-,proposed
-XR,40,NC,"reserve, leave open",-,proposed
-XR,41,NC,"reserve, leave open",-,proposed
-XR,42,NC,"reserve, leave open",-,proposed
-XR,43,NC,"reserve, leave open",-,proposed
-XR,44,NC,"reserve, leave open",-,proposed
-XR,45,NC,"reserve, leave open",-,proposed
-XR,46,NC,"reserve, leave open",-,proposed
-XR,47,NC,"reserve, leave open",-,proposed
-XR,48,NC,"reserve, leave open",-,proposed
-XR,49,NC,"reserve, leave open",-,proposed
-XR,50,NC,"reserve, leave open",-,proposed
-XR,51,NC,"reserve, leave open",-,proposed
-XR,52,NC,"reserve, leave open",-,proposed
-XR,53,NC,"reserve, leave open",-,proposed
-XR,54,NC,"reserve, leave open",-,proposed
-XR,55,NC,"reserve, leave open",-,proposed
-XR,56,NC,"reserve, leave open",-,proposed
-XR,57,NC,"reserve, leave open",-,proposed
-XR,58,NC,"reserve, leave open",-,proposed
-XR,59,NC,"reserve, leave open",-,proposed
-XR,60,NC,"reserve, leave open",-,proposed
-XL,1,GND,logic GND,return,proposed
-XL,2,S1_CLK,S1 / C:J7-75,L>parent>C,proposed
-XL,3,GND,logic GND,return,proposed
-XL,4,S2_RX,S2 / C endpoint TBD,L>parent>C,proposed
-XL,5,GND,logic GND,return,proposed
-XL,6,S3_RX,S3 / C endpoint TBD,L>parent>C,proposed
-XL,7,GND,logic GND,return,proposed
-XL,8,ADC16_SCLK,T1 / C:J9-58,C>parent>L,proposed
-XL,9,GND,logic GND,return,proposed
-XL,10,ADC16_FS,T2 / C:J9-60,C>parent>L,proposed
-XL,11,GND,logic GND,return,proposed
-XL,12,ADC16_CONVSTART,T3 / C:J9-62,C>parent>L,proposed
-XL,13,GND,logic GND,return,proposed
-XL,14,NC,"reserve, leave open",-,proposed
-XL,15,GND,logic GND,return,proposed
-XL,16,NC,"reserve, leave open",-,proposed
-XL,17,GND,logic GND,return,proposed
-XL,18,NC,"reserve, leave open",-,proposed
-XL,19,GND,logic GND,return,proposed
-XL,20,NC,"reserve, leave open",-,proposed
-XL,21,+5V,optical front end,supply,proposed
-XL,22,+5V,optical front end,supply,proposed
-XL,23,GND,logic GND,return,proposed
-XL,24,GND,logic GND,return,proposed
-XL,25,+3.3V,local supply,supply,proposed
-XL,26,+3.3V,local supply,supply,proposed
-XL,27,GND,logic GND,return,proposed
-XL,28,GND,logic GND,return,proposed
-XL,29,NC,"reserve, leave open",-,proposed
-XL,30,NC,"reserve, leave open",-,proposed
-XL,31,NC,"reserve, leave open",-,proposed
-XL,32,NC,"reserve, leave open",-,proposed
-XL,33,NC,"reserve, leave open",-,proposed
-XL,34,NC,"reserve, leave open",-,proposed
-XL,35,NC,"reserve, leave open",-,proposed
-XL,36,NC,"reserve, leave open",-,proposed
-XL,37,NC,"reserve, leave open",-,proposed
-XL,38,NC,"reserve, leave open",-,proposed
-XL,39,NC,"reserve, leave open",-,proposed
-XL,40,NC,"reserve, leave open",-,proposed
-XL,41,NC,"reserve, leave open",-,proposed
-XL,42,NC,"reserve, leave open",-,proposed
-XL,43,NC,"reserve, leave open",-,proposed
-XL,44,NC,"reserve, leave open",-,proposed
-XL,45,NC,"reserve, leave open",-,proposed
-XL,46,NC,"reserve, leave open",-,proposed
-XL,47,NC,"reserve, leave open",-,proposed
-XL,48,NC,"reserve, leave open",-,proposed
-XL,49,NC,"reserve, leave open",-,proposed
-XL,50,NC,"reserve, leave open",-,proposed
-XL,51,NC,"reserve, leave open",-,proposed
-XL,52,NC,"reserve, leave open",-,proposed
-XL,53,NC,"reserve, leave open",-,proposed
-XL,54,NC,"reserve, leave open",-,proposed
-XL,55,NC,"reserve, leave open",-,proposed
-XL,56,NC,"reserve, leave open",-,proposed
-XL,57,NC,"reserve, leave open",-,proposed
-XL,58,NC,"reserve, leave open",-,proposed
-XL,59,NC,"reserve, leave open",-,proposed
-XL,60,NC,"reserve, leave open",-,proposed
+M optical port,R1,ADC24_1_DRDY,R1 / C:J10-18,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,R2,ADC24_1_DATA,R2 / C:J10-20,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,R3,ADC24_1_SCLK,R3 / C:J10-22,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,R4,ADC24_2_DRDY,R4 / C:J10-26,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,R5,ADC24_2_DATA,R5 / C:J10-28,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,R6,ADC24_2_SCLK,R6 / C:J10-30,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,R7,ADC24_3_DRDY,R7 / C:J10-34,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,R8,ADC24_3_DATA,R8 / C:J10-36,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,R9,ADC24_3_SCLK,R9 / C:J10-38,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,R10,ADDATA16,R10 / C:J10-44,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,S1,S1_CLK,S1 / C:J7-75,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,S2,S2_RX,S2 / C endpoint TBD,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,S3,S3_RX,S3 / C endpoint TBD,fiber>M>C,port ID; optical front end on M; proposed
+M optical port,T1,ADC16_SCLK,T1 / C:J9-58,C>M>fiber,port ID; optical front end on M; proposed
+M optical port,T2,ADC16_FS,T2 / C:J9-60,C>M>fiber,port ID; optical front end on M; proposed
+M optical port,T3,ADC16_CONVSTART,T3 / C:J9-62,C>M>fiber,port ID; optical front end on M; proposed
 XETH,1,GND,logic GND,return,proposed
 XETH,2,REF_CLK,PA1 / PHY-14,E>C,proposed
 XETH,3,GND,logic GND,return,proposed

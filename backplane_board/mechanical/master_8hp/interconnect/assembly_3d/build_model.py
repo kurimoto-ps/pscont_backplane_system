@@ -30,7 +30,7 @@ def flat_bundle(points):
     return section.transformGeometry(matrix)
 
 palette={'M':'307e64','C':'2869ac','R':'42a4a4','L':'985ea9','E':'d08432','P':'c6a335','F':'a9b7c0','H':'596679'}
-names={'M':'01 M - carrier','C':'02 C - controller','R':'03 R - optical receiver','L':'04 L - optical Tx and timing Rx','E':'05 E - Ethernet','P':'06 P - passive PLC','F':'07 metalwork','H':'08 removable harnesses'}
+names={'M':'01 M - optical carrier','C':'02 C - controller','E':'03 E - Ethernet','P':'04 P - passive PLC','F':'05 metalwork','H':'06 removable harnesses'}
 shapes={}; spec={}; boards={}; rows=[]; clash={}; status=[]
 def put(key,g,shape,cls,color=None):
     assert not shape.isNull() and shape.isValid(),key
@@ -45,8 +45,8 @@ def check(label,a,bsh):
     return v
 # Through holes are proposals except the existing controller outline. Sheet metal
 # uses plain holes and seat representations, not thread or fastener-detail models.
-mounts={'M':[(48,26),(48,229)],'P':[(26,29),(26,139)],'R':[(29,22),(29,182)],
-        'L':[(30,154),(30,240)],'E':[(31,195.3),(31,207)]}
+mounts={'M':[(48,26),(39,143),(48,243)],'P':[(26,29),(26,139)],'E':[(31,195.3),(31,207)]}
+
 def board(g,x,d,y,depth,height,extra=None):
     s=b(x,d,y,1.6,depth,height)
     if extra:s=extra(s)
@@ -54,12 +54,10 @@ def board(g,x,d,y,depth,height,extra=None):
     boards[g]=s
     put('PCB_'+g,g,s,'PCB')
     rows.append([g,names[g].split(' - ',1)[1],1,1.6,x,round(x+1.6,2),y,round(y+height,2),d,round(d+depth,2)])
-board('M',6.97,0,13.55,160,233.35,lambda s:s.cut(b(6,-1,19,4,33,229)).cut(b(6,-1,31,4,43,50)))
+board('M',6.97,0,13.55,160,233.35)
 board('C',13.57,48,75,68.4,145.05)
-board('R',20.57,0,15,44,174)
-board('L',15.57,0,149,44,98)
-board('E',21.17,0,190.6,107,21.2)
-board('P',14.4,0,24,31,121)
+board('E',22.17,0,190.6,107,21.2)
+board('P',36.25,0,24,31,121)
 for a,g in itertools.combinations(boards,2):check('PCB '+a+'/'+g,boards[a],boards[g])
 locations={'J7':(127,67),'J8':(127,111),'J9':(86,67),'J10':(86,111),'U1':(126,88.8),'U5':(84.22,88.66),
            'U2':(146,94),'J1':(168,98.7),'J3':(161,84.5),'J4':(124,104.5),'J6':(42,61)}
@@ -75,7 +73,7 @@ def device(ref,w,depth,height,col):
 for r,sz in [('U1',14),('U2',10),('U5',23)]:device(r,1.6,sz,sz,'344352')
 for r,depth,height in [('J4',13,9),('J6',10,9)]:device(r,5.1,depth,height,'424750')
 # Seated interface bodies occupy the complete board-to-board gap.
-mates={'XR':('M','R',8.57,12,38,95,7,24.6),'XL':('M','L',8.57,7,38,191,7,24.6),'XETH':('C','E',15.17,6,92,201.2,24.6,7)}
+mates={'XETH':('C','E',15.17,7,92,201.2,24.6,7)}
 for r in ['J7','J8','J9','J10']:
     d,y=source(r);mates[r]=('M','C',8.57,5,d,y,6.6,30 if r in ['J9','J10'] else 25)
 for r,(g1,g2,x,w,d,y,dep,h) in mates.items():
@@ -90,20 +88,20 @@ old={}
 for r,depth,height in [('J1',17.4,5.75),('J3',5.75,9.9)]:
     d,y=source(r);old[r]=b(15.17,d-depth/2,y-height/2,7,depth,height)
     overlap=old[r].common(boards['E']).Volume
-    assert overlap>0
-    status.append([r,'existing XH header intersects E',round(d,2),round(y,2),round(overlap,2)])
+    assert overlap<0.001 and old[r].distToShape(boards['E'])[0]<0.001
+    status.append([r,'nominal clearance to E = 0 mm; relocate for tolerance and mating',round(d,2),round(y,2),round(overlap,2)])
 # Front panel: holes are review envelopes. PLC is an open window for both levers.
 face=b(0,-2.2,0,40.34,2.2,H)
-face=face.cut(b(4.65,-3,18.7,11,5,130.5))
+face=face.cut(b(26.5,-3,18.7,11,5,130.5))
 for r in ports:
     x,y=float(r['x_from_left_mm']),float(r['y_from_top_mm'])
     tag,kind=r['label'],r['group']
     if kind=='PLC':
         g='P'
-        sh=b(5.9,-3,y-22.35,8.5,19.5,44.7).cut(b(7.2,-4,y-14.8,5.3,7.7,29.6))
+        sh=b(27.75,-3,y-22.35,8.5,19.5,44.7).cut(b(29.05,-4,y-14.8,5.3,7.7,29.6))
         for i in range(10):
             for j in range(2):
-                sh=sh.fuse(b(8.6+j*2.54,-.9,y-11.7+i*2.54,.55,4.8,.55))
+                sh=sh.fuse(b(30.45+j*2.54,-.9,y-11.7+i*2.54,.55,4.8,.55))
         # Lever positions are schematic, maximum operational span is separately checked.
         put(tag+'-PLC',g,sh,'port','435268');continue
     if kind=='RS':
@@ -119,56 +117,70 @@ for r in ports:
     if kind=='ETH':
         # Body is tied to the E surface; panel opening follows the existing panel datum.
         face=face.cut(b(x-7.75,-3,y-8.75,15.5,5,17.5))
-        sh=b(22.77,-2.2,y-8.1,14.1,25.4,16.2).cut(b(24.4,-3.2,y-6.1,10.7,8,12.2))
+        sh=b(23.77,-2.2,y-8.1,14.1,25.4,16.2).cut(b(25.4,-3.2,y-6.1,10.7,8,12.2))
         put('ETH-RJ45','E',sh,'port','8e9ba6')
-        put('LAN8742A','E',b(22.77,48.5,y-2.25,.95,4.5,4.5),'device','344352');continue
-    g='R' if tag.startswith('R') else 'L'
-    # Package envelopes registered to panel axes. Exact optical-axis to solder
-    # plane offsets must be obtained before a hole pattern can be released.
+        put('LAN8742A','E',b(23.77,48.5,y-2.25,.95,4.5,4.5),'device','344352');continue
+    g='M'
     w=float(r['body_W_mm_review'])
     h=float(r['body_H_mm_review'])
-    dep=28.65 if kind=='SC' else 15.0
-    # Hitachi only labels the three values as size. The X/Y/D assignment is provisional.
     if kind=='F06':
-        assert sorted((w,h,dep)) == [11.0,13.4,15.0], (tag,w,h,dep)
-    face=face.cut(b(x-w/2-.45,-3,y-h/2-.45,w+.9,5,h+.9))
-    sh=b(x-w/2,-2.3,y-h/2,w,dep,h)
-    if kind=='SC':sh=sh.cut(b(x-3.5,-3,y-4.15,7,7,8.3))
-    else:sh=sh.cut(b(x-3.65,-3,y-4.5,7.3,5.2,9))
-    if kind=='F06':
+        # DR9300 Rev.0, p.4. The board stands perpendicular to the panel;
+        # the package width lies along panel Y, its seated height along X.
+        # Reuse the receiver outline provisionally for the three DS transmitters.
+        assert (w,h)==(13.4,11)
+        center_x=float(r['body_center_X_mm_review'])
+        nose=float(r['nose_span_Y_mm_review'])
+        mounted_x=boards[g].BoundBox.XMax
+        assert abs(center_x-(mounted_x+w/2))<1e-6 and nose==9
+        front=-2.3
+        dep=15
+        shoulder=7.1
+        # Use the enclosing rear step for the short transition to the full width.
+        sh=b(mounted_x,front,y-nose/2,w,shoulder,nose).fuse(
+            b(mounted_x,front+shoulder,y-h/2,w,dep-shoulder,h)).removeSplitter()
+        # Only the narrow nose crosses the panel. This is a packaging study cut.
+        face=face.cut(b(mounted_x-.45,-3,y-nose/2-.45,w+.9,5,nose+.9))
+        assert sh.distToShape(boards[g])[0]<1e-6
         bb=sh.BoundBox
         assert max(abs(v-ref) for v,ref in zip((bb.XLength,bb.ZLength,bb.YLength),(w,h,dep)))<1e-6
-    put(tag+'-'+kind,g,sh,'port','38546a' if g=='R' else ('475968' if kind=='SC' else '70524d'))
-    # Mount plane allowance, not measured package features.
-    rear=22.17 if g=='R' else 15.57
-    edge=x-w/2 if g=='R' else x+w/2
-    if abs(edge-rear)>.02:
-        put(tag+'-seat',g,b(min(edge,rear),4,y-2.2,abs(edge-rear),4,4.4),'seat','a9b2a4')
+        put(tag+'-'+kind,g,sh,'port','467893' if tag.startswith('R') else 'a56449')
+        continue
+    dep=28.65
+    face=face.cut(b(x-w/2-.45,-3,y-h/2-.45,w+.9,5,h+.9))
+    sh=b(x-w/2,-2.3,y-h/2,w,dep,h).cut(b(x-3.5,-3,y-4.15,7,7,8.3))
+    put(tag+'-'+kind,g,sh,'port','475968')
+    assert sh.distToShape(boards['M'])[0]<1e-6
 # Backplane sockets are on the separate backplane. Only mating envelope on M is shown.
 for j,y in [('J2',63.55),('J3',196.9)]:
     put('BP-'+j,'M',b(1.77,159.9,y-41,12,11,82),'back','c5bda9')
-# The metallic centre web carries load from the three mezzanines and PLC board.
-# Enlarged ears connect to the carrier; spacers seat on backs of the front PCBs.
-spine=b(17.9,0,9,1.5,32,243)
-for d,y in mounts['M']:spine=spine.fuse(b(17.9,30,y-5,1.5,24,10))
-for g,ps in mounts.items():
-    for d,y in ps:
-        spine=spine.cut(cx(16.6,d,y,1,4.5))
-        a,bb={'M':(8.57,17.9),'P':(16,17.9),'R':(19.4,20.57),'L':(17.17,17.9),'E':(19.4,21.17)}[g]
-        sp=cx(a,d,y,2.35,bb-a).cut(cx(a-.3,d,y,1.05,bb-a+.6))
-        put(f'spacer-{g}-{y}','F',sp,'fix','bdab87')
-for y in (11,130,249):
-    foot=b(17.32,0,y-2.3,3.06,5.8,4.6).cut(cd(18.85,-.3,y,.85,6.4))
-    spine=spine.fuse(foot)
-    spine=spine.cut(cd(18.85,-.3,y,.85,6.4))
-    face=face.cut(cd(18.85,-3,y,1.1,4))
-put('support-spine','F',spine.removeSplitter(),'metal','a5adb1')
+# A front bracket supports P and the carrier near the optical bank. Two
+# separate lower brackets leave the SC bodies and the Ethernet jack clear.
+brackets=[
+    ('upper',24.2,23,123,[(48,26),(39,143)],['P'],[25,136]),
+    ('ethernet',19.6,190,22,[],['E'],[193,208]),
+    ('lower',19.6,240,6,[(48,243)],[],[243])]
+metal_keys=['front-panel']
+for name,x,y0,span,carrier,others,feet in brackets:
+    web=b(x,0,y0,1.5,32,span)
+    for d,y in carrier:web=web.fuse(b(x,30,y-2.8,1.5,d-26,5.6))
+    for g,holes in [('M',carrier)]+[(g,mounts[g]) for g in others]:
+        for d,y in holes:
+            web=web.cut(cx(x-.5,d,y,1,2.5))
+            a,z=(8.57,x) if g=='M' else (x+1.5,boards[g].BoundBox.XMin)
+            sp=cx(a,d,y,2.35,z-a).cut(cx(a-.3,d,y,1.05,z-a+.6))
+            put(f'spacer-{g}-{y}','F',sp,'fix','bdab87')
+    for y in feet:
+        xx=x+.75
+        web=web.fuse(b(xx-1.3,0,y-1.75,2.6,5,3.5)).cut(cd(xx,-.5,y,.85,6))
+        face=face.cut(cd(xx,-3,y,1.1,4))
+    key='bracket-'+name
+    put(key,'F',web.removeSplitter(),'metal','a5adb1');metal_keys.append(key)
 put('front-panel','F',face,'metal','aab8c1')
 # Connectors and in-card harness centre lines. Conductors and crimp contacts
 # are not represented. Radii are bundle envelopes, to be checked on the chosen cable.
-paths={'H-PI':[(10.3,25,47),(10.45,30,47),(11.2,38,46),(13.5,48,44),(13,57,44)],
-       'H-PO':[(10.3,25,113),(10.6,24,108),(10.6,24,76),(10.8,33,71),(13.5,46,64),(13,57,64)],
-       'H-RS':[(30.15,5.5,230.8),(30.15,16,230.8),(30.15,51,230.8),(26,55,232),(18,60,236),(12.7,65,238)]}
+paths={'H-PI':[(32,25,47),(32,36,47),(32,47,46),(20,50,44),(13,57,44)],
+       'H-PO':[(32,25,113),(32,42,113),(32,45,79),(31,47,66),(21,51,64),(13,57,64)],
+       'H-RS':[(30.65,5.5,230.8),(30.65,16,230.8),(30.65,51,230.8),(26,55,232),(18,60,236),(12.7,65,238)]}
 for name,points in paths.items():
     rad=1.65 if name=='H-RS' else 2.35
     clr={'H-PI':'d9a737','H-PO':'bc7140','H-RS':'5177ae'}[name]
@@ -177,7 +189,7 @@ for name,points in paths.items():
     sy=points[-1][2];dd=68 if name=='H-RS' else 60
     put(name+'-parent','M',b(8.57,dd-3.5,sy-(5 if name=='H-RS' else 9),6,7,(10 if name=='H-RS' else 18)),'socket','68717a')
     if name!='H-RS':
-        put(name+'-front','P',b(8.5,21,points[0][2]-9,5.9,8,18),'socket','68717a')
+        put(name+'-front','P',b(30.35,21,points[0][2]-9,5.9,8,18),'socket','68717a')
 # Check all separate PCBs against foreign installed bodies, all harnesses and the metalwork.
 for k,s in shapes.items():
     kind=spec[k]['kind']
@@ -190,11 +202,10 @@ for h in paths:
         if spec[k]['kind'] in ('mate','metal','socket','back','port','device','harness','fix'):check(h+' / '+k,shapes[h],s)
 for k,sh in shapes.items():
     if spec[k]['kind'] in ('port','mate','device','socket','back','seat'):
-        for metal in ('front-panel','support-spine'):check(k+' / '+metal,sh,shapes[metal])
-# Physical intersection of other seated components, excluding conductive contact
-# within the same group, the deliberate mate/host and RJ jack/board contacts.
+        for metal in metal_keys:check(k+' / '+metal,sh,shapes[metal])
+# Check neighbouring components even when they share a host PCB.
 for k,j in itertools.combinations([k for k in shapes if spec[k]['kind'] in ('port','mate','device','socket','back')],2):
-    if spec[k]['g']!=spec[j]['g']:check(k+' / '+j,shapes[k],shapes[j])
+    check(k+' / '+j,shapes[k],shapes[j])
 service=[]
 for a,c in itertools.combinations(ports,2):
     gap=[]
@@ -202,11 +213,27 @@ for a,c in itertools.combinations(ports,2):
         gap.append(max(0,abs(float(a[v])-float(c[v]))-(float(a[attr])+float(c[attr]))/2))
     service.append((round(math.hypot(*gap),3),a['label'],c['label']))
 service.sort()
-watch=[('H-PO','XR-mate'),('H-PO','PCB_P'),('H-PO','support-spine'),('H-PI','PCB_P'),('H-RS','PCB_L'),('PCB_R','PCB_E'),('PCB_M','PCB_C'),('PCB_C','PCB_E')]
+optic=[r['label']+'-'+r['group'] for r in ports if r['group'] in ('F06','SC')]
+assert len(optic)==16
+optical_bounds=[shapes[key].BoundBox for key in optic]
+row_bounds=[round(H-max(bb.ZMax for bb in optical_bounds),3),
+            round(H-min(bb.ZMin for bb in optical_bounds),3)]
+parent_bounds=boards['M'].BoundBox
+edge_margins=[round(row_bounds[0]-(H-parent_bounds.ZMax),3),
+              round(H-parent_bounds.ZMin-row_bounds[1],3)]
+assert min(edge_margins)>0
+for key in optic:
+    assert shapes[key].distToShape(boards['M'])[0]<1e-6
+    assert shapes[key].common(boards['M']).Volume<1e-6
+watch=[('R1-F06','R2-F06'),('R10-F06','T1-F06'),('T3-F06','S1-SC'),('S1-SC','S2-SC'),
+       ('H-PO','bracket-upper'),('H-PI','bracket-upper'),('PCB_M','PCB_C'),('PCB_C','PCB_E')]
 clearance={a+' / '+b:round(shapes[a].distToShape(shapes[b])[0],3) for a,b in watch}
-report={'F06_housing_review_X_Y_D_mm':[11.0,13.4,15.0], 'F06_axis_assignment':'provisional; catalog does not identify axes', 'selected_clearances_mm':clearance,'pcbs':rows,'removed_header_envelopes':status,'front_service_min':service[:8],'unexpected_intersections_mm3':clash,
+report={'F06_housing_review_X_Y_D_mm':[13.4,11.0,15.0], 'DR9300_basis':'Delivery specification Rev.0 p.4; 11 mm width along panel Y, 13.1+0.3 seated height along X. DS transfer provisional', 'DR9300_nose_width_and_length_mm':[9.0,7.1], 'DR_row_min_body_gap_mm':round(shapes['R1-F06'].distToShape(shapes['R2-F06'])[0],2), 'selected_clearances_mm':clearance,'pcbs':rows,'removed_header_envelopes':status,'front_service_min':service[:8],'unexpected_intersections_mm3':clash,
         'route_mm_without_slack':{h:round(sum(math.dist(a,bp) for a,bp in zip(p,p[1:])),1) for h,p in paths.items()},
-        'board_pairs_checked':15,'fx10_fx8c_interfaces_checked':len(mates)}
+        'optics_in_contact_with_parent':len(optic),'row_span_Y_mm':row_bounds,
+        'optical_row_length_mm':round(row_bounds[1]-row_bounds[0],3),
+        'optical_row_board_edge_margins_mm':edge_margins,
+        'board_pairs_checked':len(list(itertools.combinations(boards,2))),'fx10_fx8c_interfaces_checked':len(mates)}
 (out/'fit_report.json').write_bytes((json.dumps(report,indent=2)+'\n').encode('utf8'))
 print(report,flush=True)
 assert not clash,'Unexpected overlaps; inspect fit_report.json.'

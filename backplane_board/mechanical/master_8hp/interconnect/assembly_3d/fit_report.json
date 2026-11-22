@@ -1,24 +1,29 @@
 {
   "F06_housing_review_X_Y_D_mm": [
-    11.0,
     13.4,
+    11.0,
     15.0
   ],
-  "F06_axis_assignment": "provisional; catalog does not identify axes",
+  "DR9300_basis": "Delivery specification Rev.0 p.4; 11 mm width along panel Y, 13.1+0.3 seated height along X. DS transfer provisional",
+  "DR9300_nose_width_and_length_mm": [
+    9.0,
+    7.1
+  ],
+  "DR_row_min_body_gap_mm": 1.7,
   "selected_clearances_mm": {
-    "H-PO / XR-mate": 2.433,
-    "H-PO / PCB_P": 1.31,
-    "H-PO / support-spine": 4.533,
-    "H-PI / PCB_P": 1.619,
-    "H-RS / PCB_L": 11.33,
-    "PCB_R / PCB_E": 1.6,
+    "R1-F06 / R2-F06": 1.7,
+    "R10-F06 / T1-F06": 1.7,
+    "T3-F06 / S1-SC": 5.75,
+    "S1-SC / S2-SC": 3.3,
+    "H-PO / bracket-upper": 4.2,
+    "H-PI / bracket-upper": 4.2,
     "PCB_M / PCB_C": 5.0,
-    "PCB_C / PCB_E": 6.0
+    "PCB_C / PCB_E": 7.0
   },
   "pcbs": [
     [
       "M",
-      "carrier",
+      "optical carrier",
       1,
       1.6,
       6.97,
@@ -41,36 +46,12 @@
       116.4
     ],
     [
-      "R",
-      "optical receiver",
-      1,
-      1.6,
-      20.57,
-      22.17,
-      15,
-      189,
-      0,
-      44
-    ],
-    [
-      "L",
-      "optical Tx and timing Rx",
-      1,
-      1.6,
-      15.57,
-      17.17,
-      149,
-      247,
-      0,
-      44
-    ],
-    [
       "E",
       "Ethernet",
       1,
       1.6,
-      21.17,
-      22.77,
+      22.17,
+      23.77,
       190.6,
       211.8,
       0,
@@ -81,8 +62,8 @@
       "passive PLC",
       1,
       1.6,
-      14.4,
-      16.0,
+      36.25,
+      37.85,
       24,
       145,
       0,
@@ -92,67 +73,77 @@
   "removed_header_envelopes": [
     [
       "J1",
-      "existing XH header intersects E",
+      "nominal clearance to E = 0 mm; relocate for tolerance and mating",
       70.4,
       207,
-      100.05
+      0.0
     ],
     [
       "J3",
-      "existing XH header intersects E",
+      "nominal clearance to E = 0 mm; relocate for tolerance and mating",
       84.6,
       200,
-      56.93
+      0.0
     ]
   ],
   "front_service_min": [
     [
-      1.0,
-      "S1",
-      "S2"
-    ],
-    [
-      1.0,
+      0.14,
       "S2",
-      "S3"
+      "232"
     ],
     [
-      1.0,
-      "T1",
-      "T2"
-    ],
-    [
-      1.0,
-      "T2",
-      "T3"
-    ],
-    [
-      1.25,
+      0.14,
       "S3",
-      "T1"
+      "232"
     ],
     [
-      1.4,
+      0.7,
       "R1",
       "R2"
     ],
     [
-      1.4,
+      0.7,
+      "R10",
+      "T1"
+    ],
+    [
+      0.7,
       "R2",
       "R3"
     ],
     [
-      1.4,
+      0.7,
       "R3",
       "R4"
+    ],
+    [
+      0.7,
+      "R4",
+      "R5"
+    ],
+    [
+      0.7,
+      "R5",
+      "R6"
     ]
   ],
   "unexpected_intersections_mm3": {},
   "route_mm_without_slack": {
-    "H-PI": 32.6,
-    "H-PO": 73.4,
-    "H-RS": 69.2
+    "H-PI": 44.5,
+    "H-PO": 85.3,
+    "H-RS": 69.6
   },
-  "board_pairs_checked": 15,
-  "fx10_fx8c_interfaces_checked": 7
+  "optics_in_contact_with_parent": 16,
+  "row_span_Y_mm": [
+    22.5,
+    236.35
+  ],
+  "optical_row_length_mm": 213.85,
+  "optical_row_board_edge_margins_mm": [
+    8.95,
+    10.55
+  ],
+  "board_pairs_checked": 6,
+  "fx10_fx8c_interfaces_checked": 5
 }
