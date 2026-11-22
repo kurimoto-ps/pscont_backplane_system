@@ -1,0 +1,152 @@
+{
+  "selected_clearances_mm": {
+    "H-PO / XR-mate": 2.433,
+    "H-PO / PCB_P": 1.31,
+    "H-PO / support-spine": 4.533,
+    "H-PI / PCB_P": 1.619,
+    "H-RS / PCB_L": 11.33,
+    "PCB_R / PCB_E": 1.6,
+    "PCB_M / PCB_C": 5.0,
+    "PCB_C / PCB_E": 6.0
+  },
+  "pcbs": [
+    [
+      "M",
+      "carrier",
+      1,
+      1.6,
+      6.97,
+      8.57,
+      13.55,
+      246.9,
+      0,
+      160
+    ],
+    [
+      "C",
+      "controller",
+      1,
+      1.6,
+      13.57,
+      15.17,
+      75,
+      220.05,
+      48,
+      116.4
+    ],
+    [
+      "R",
+      "optical receiver",
+      1,
+      1.6,
+      20.57,
+      22.17,
+      15,
+      189,
+      0,
+      44
+    ],
+    [
+      "L",
+      "optical Tx and timing Rx",
+      1,
+      1.6,
+      15.57,
+      17.17,
+      149,
+      247,
+      0,
+      44
+    ],
+    [
+      "E",
+      "Ethernet",
+      1,
+      1.6,
+      21.17,
+      22.77,
+      190.6,
+      211.8,
+      0,
+      107
+    ],
+    [
+      "P",
+      "passive PLC",
+      1,
+      1.6,
+      14.4,
+      16.0,
+      24,
+      145,
+      0,
+      31
+    ]
+  ],
+  "removed_header_envelopes": [
+    [
+      "J1",
+      "existing XH header intersects E",
+      70.4,
+      207,
+      100.05
+    ],
+    [
+      "J3",
+      "existing XH header intersects E",
+      84.6,
+      200,
+      56.93
+    ]
+  ],
+  "front_service_min": [
+    [
+      1.0,
+      "S1",
+      "S2"
+    ],
+    [
+      1.0,
+      "S2",
+      "S3"
+    ],
+    [
+      1.0,
+      "T1",
+      "T2"
+    ],
+    [
+      1.0,
+      "T2",
+      "T3"
+    ],
+    [
+      1.25,
+      "S3",
+      "T1"
+    ],
+    [
+      1.4,
+      "R1",
+      "R2"
+    ],
+    [
+      1.4,
+      "R2",
+      "R3"
+    ],
+    [
+      1.4,
+      "R3",
+      "R4"
+    ]
+  ],
+  "unexpected_intersections_mm3": {},
+  "route_mm_without_slack": {
+    "H-PI": 32.6,
+    "H-PO": 73.4,
+    "H-RS": 69.2
+  },
+  "board_pairs_checked": 15,
+  "fx10_fx8c_interfaces_checked": 7
+}

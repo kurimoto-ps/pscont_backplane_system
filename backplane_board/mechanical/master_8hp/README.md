@@ -1,6 +1,6 @@
 # 6U・8 HPマスター前面I/Oの収容検討
 
-[演算子基板の改版と前面I/Oの内部配線（接続図・配置・ハーネス表）](interconnect/README.md)
+[マスターを構成する6種類・各1枚の3D組立図、STEP、前面I/O結線](interconnect/README.md)
 
 [実寸の正面配置と検討結果（PDF、3ページ）](master_8hp_panel_fit.pdf) · [中心座標と占有寸法（CSV、mm）](front_io_centres.csv)
 
